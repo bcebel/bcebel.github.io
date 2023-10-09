@@ -120,12 +120,18 @@
         }
     </style>
 </head>
+<header><label for="cars">Other Pages:</label>
 
+<select onChange="window.location.href=this.value"name="pages" id="pages">
+    <option value="https://bcebel.github.io">Pick a Page</option>
+    <option value ="https://bcebel.github.io/blog">Solar Panels</option>
+    <option value="https://bcebel.github.io/brian/">Portfolio</option>
+</select></header>
 <body>
     <!--<a href="./pages/page2.html">Page2</a>-->
-    <h1>Brian Ebel Blog</h1>
+    <h1>Brian's Blog</h1>
 
-    <amp-img alt="A view of the sea" src="./images/brian.jpg" width="276" height="276" layout="responsive">
+    <amp-img alt="Brian Ebel" src="./images/brian.jpg" width="276" height="276" layout="responsive">
     </amp-img>
     <p>Hi my name is Brian Ebel.  I am a software engineer and I am interested in the green economy.</p> 
 
@@ -137,10 +143,6 @@
 
     <p>I am learning about how the systems work. </p>
 
-
-    <h2>Take a look at some of my other pages for examples of my work</h2>
-    
-    <p> <a href="https://bcebel.github.io/BrianPortfolio/">Brian Portfolio</a> </p>
 
 
 

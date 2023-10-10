@@ -5,6 +5,9 @@
     <meta name="google-site-verification" content="HnA_UiFO5yQR6QanRVHVPwx4wCJ3n6gJNWU2D2xwMa4" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3239465181490887"
         crossorigin="anonymous"></script>
+        <script async custom-element="amp-bodymovin-animation"
+            src="https://cdn.ampproject.org/v0/amp-bodymovin-animation-0.1.js"></script>
+
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <title>Brian C Ebel</title>
@@ -85,9 +88,11 @@
             margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
-            color: rgb(0, 0, 0);
-            background: rgb(2, 0, 36);
-            background: linear-gradient(45deg, rgb(170, 221, 181) 20%, rgb(191, 255, 203) 40%, rgb(188, 251, 207) 60%, rgb(165, 218, 175) 80%);
+            color: rgb(255, 255, 255);
+
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(10, 10, 81) 35%, rgb(0, 0, 0) 100%);
+background: opacity(0.9);
+
             padding:2em;
             border-width: 2em;
             border-style: solid;
@@ -120,21 +125,27 @@
             height: auto;
             display: block;
             margin: 0 auto;
+            border-radius: 30em;
         }
 
     </style>
 </head>
-<header><label for="cars">Other Pages:</label>
 
-<select onChange="window.location.href=this.value"name="pages" id="pages">
-    <option value="https://bcebel.github.io">Pick a Page</option>
-    <option value ="https://bcebel.github.io/blog">Solar Panels</option>
-    <option value="https://bcebel.github.io/brian/">Portfolio</option>
-</select></header>
+
 <body>
-    <!--<a href="./pages/page2.html">Page2</a>-->
+    <header><label for="cars">Other Pages:</label>
+    
+        <select onChange="window.location.href=this.value" name="pages" id="pages">
+            <option value="https://bcebel.github.io">Pick a Page</option>
+            <option value="https://bcebel.github.io/blog">Solar Panels</option>
+            <option value="https://bcebel.github.io/biochar/">Biochar</option>
+            <option value="https://bcebel.github.io/brian/">Portfolio</option>
+        </select>
+    </header>
     <h1>Brian's Blog</h1>
-
+<amp-bodymovin-animation layout="responsive" width="1000" height="100"
+    src="https://assets3.lottiefiles.com/packages/lf20_7iux5gpv.json">
+</amp-bodymovin-animation>
     <amp-img class ="phot" alt="Brian Ebel" src="./images/brian.jpg" width="1" height="1" layout="responsive">
     </amp-img>
 

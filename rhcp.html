@@ -104,6 +104,9 @@
 
         h1 {
             text-align: center;
+            background-color: rgb(255, 0, 0);
+            color:black;
+               border-radius: 2px;
         }
 
         p {
@@ -139,26 +142,22 @@
 
 
 <body>
-    <header><label for="cars">Other Pages:</label>
-
-        <select onChange="window.location.href=this.value" name="pages" id="pages" amp-fx="fly-in-top"
-            data-fly-in-distance="50%">
-            <option value="https://bcebel.github.io">Other Pages</option>
-            <option value="https://bcebel.github.io">Home</option>
-            <option value="/revolver.html">Beatles Revolver</option>
-            <option value="/rhcp.html">Red Hot Chili Peppers</option>
-            <option value="https://bcebel.github.io/Hot10">Hot 10!</option>
-        </select>
-
+    <header><select onChange="window.location.href=this.value" name="pages" id="pages" amp-fx="parallax"
+        data-parallax-factor="1.75">
+        <option value="https://bcebel.github.io">Other Pages</option>
+        <option value="https://bcebel.github.io">Home</option>
+        <option value="/revolver.html">Beatles Revolver</option>
+        <option value="/rhcp.html">Red Hot Chili Peppers</option>
+        <option value="https://bcebel.github.io/Hot10">Hot 10!</option>
+    </select>
+    
     </header>
-    <h1 amp-fx="parallax" data-parallax-factor="1.25">woozician</h1>
-    <h1 amp-fx="parallax" data-parallax-factor="1.25">amplifying punk passion: music, rebellion, culture</h1>
+    
+    <h1 amp-fx="parallax" data-parallax-factor="1.75">Woozician</h1>
+    <h1 amp-fx="parallax" data-parallax-factor="1.75">amplifying punk passion: music, rebellion, culture</h1>
 
-    <amp-bodymovin-animation layout="responsive" width="1000" height="200" amp-fx="parallax" data-parallax-factor="1.25"
-        src="https://lottie.host/21ae9c70-bc2e-45b8-84c0-1102fee7d163/oQfnTZlsdZ.json">
-    </amp-bodymovin-animation>
     <div amp-fx="fade-in fly-in-bottom" data-duration="750ms">
-        <h1>Red Hot Chili Peppers: The Navarro Era - A Red Hot Minute of Artistic Exploration</h1>
+        <h2>Red Hot Chili Peppers: The Navarro Era - A Red Hot Minute of Artistic Exploration</h2>
 
         <amp-img class="phot" alt="Brian Ebel" src="./images/navarro.jpg" width="647" height="800" layout="responsive">
         </amp-img>

@@ -99,11 +99,15 @@
             padding: 2em;
             border-width: 2em;
             border-style: solid;
-            border-color: black
+            border-color: black;
+
         }
 
         h1 {
             text-align: center;
+            background-color: rgb(255, 0, 0);
+            color:black;
+               border-radius: 2px;
         }
 
         p {
@@ -135,6 +139,11 @@
             border-style: solid;
 
         }
+        .ani{
+
+            z-index: -5;
+            position: relative;
+        }
     </style>
 </head>
 
@@ -150,15 +159,19 @@
             <option value="/rhcp.html">Red Hot Chili Peppers</option>
             <option value="https://bcebel.github.io/Hot10">Hot 10!</option>
         </select>
+        <div class="ani">
+            <amp-bodymovin-animation layout="fixed" width="1000" height="200" amp-fx="parallax" data-parallax-factor=".2"
+                src="https://lottie.host/21ae9c70-bc2e-45b8-84c0-1102fee7d163/oQfnTZlsdZ.json">
+            </amp-bodymovin-animation>
+        </div>
     </header>
-    <h1 amp-fx="parallax" data-parallax-factor="1.25">woozician</h1>
-    <h1 amp-fx="parallax" data-parallax-factor="1.25">amplifying punk passion: music, rebellion, culture</h1>
 
-    <amp-bodymovin-animation layout="responsive" width="1000" height="200" amp-fx="parallax" data-parallax-factor="1.25"
-        src="https://lottie.host/21ae9c70-bc2e-45b8-84c0-1102fee7d163/oQfnTZlsdZ.json">
-    </amp-bodymovin-animation>
+    <h1 amp-fx="fly-in-left" data-duration="200ms">Woozician Zine</h1>
+    <h1 amp-fx="fly-in-right" data-duration="2000ms">amplifying punk passion: music, rebellion, culture</h1>
+
+
     <div amp-fx="fade-in" data-duration="2000ms">
-        <h1>Rocking Through Time: A Journey Across Genres and Eras</h1>
+        <h2>Rocking Through Time: A Journey Across Genres and Eras</h2>
     </div>
     <p>
         Woozician serves as a sanctuary for music enthusiasts, a digital repository of in-depth articles that delve into

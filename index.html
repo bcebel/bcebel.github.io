@@ -2,6 +2,7 @@
 <html amp lang="en">
 
 <head>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-fx-collection"
         src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
@@ -85,6 +86,29 @@
 
     </noscript>
     <style amp-custom>
+        .hamburger {
+            padding-left: 10px;
+        }
+
+        .sidebar {
+            padding: 10px;
+            margin: 0;
+        }
+
+        .sidebar>li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+        }
+
+        .close-sidebar {
+            font-size: 1.5em;
+            padding-left: 5px;
+        }
+
         body {
             font-family: "Allerta Stencil", serif;
 
@@ -152,25 +176,30 @@
 <body>
     <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
     </amp-auto-ads>
-    <header>
+    <header class="headerbar">
+        <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
+        <div class="site-name">MORE PAGES</div>
 
-        <select onChange="window.location.href=this.value" name="pages" id="pages" amp-fx="fly-in-top"
-            data-fly-in-distance="50%">
-            <option value="https://bcebel.github.io">Other Pages</option>
-            <option value="https://bcebel.github.io">Home</option>
-            <option value="/revolver.html">Beatles Revolver</option>
-            <option value="/rhcp.html">Red Hot Chili Peppers</option>
-            <option value="/pearljam.html">Pearl Jam</option>
-            <option value="/steviewonder.html">Stevie Wonder</option>
-
-            <option value="https://bcebel.github.io/Hot10">Hot 10!</option>
-        </select>
 
         <h1 amp-fx="fly-in-left" data-duration="200ms">WUZICC</h1>
 
 
     </header>
+    <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
+        <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕
+        </div>
+        <ul class="sidebar">
+                        <li><a href="https://bcebel.github.io">Home</a></li>
 
+                    <li><a href="/revolver.html">Beatles Revolver</a></li>
+                    
+            <li><a href="/pearljam.html">Pearl Jam</a></li>
+            <li><a href="/rhcp.html">Red Hot Chili Peppers</a></li>
+            <li><a href="/pearljam.html">Pearl Jam</a></li>
+            <li><a href="/steviewonder.html">Stevie Wonder</a></li>
+            <li><a href="https://bcebel.github.io/Hot10">Hot10!</a></li>
+        </ul>
+    </amp-sidebar>
 
     <h1 amp-fx="fly-in-right" data-duration="2000ms">amplifying punk passion: music, rebellion, culture</h1>
 

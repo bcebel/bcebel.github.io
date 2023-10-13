@@ -2,13 +2,14 @@
 <html amp lang="en">
 
 <head>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <script async custom-element="amp-fx-collection"
         src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
     <meta name="google-site-verification" content="HnA_UiFO5yQR6QanRVHVPwx4wCJ3n6gJNWU2D2xwMa4" />
-<script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
     <script async custom-element="amp-bodymovin-animation"
         src="https://cdn.ampproject.org/v0/amp-bodymovin-animation-0.1.js"></script>
 
@@ -86,6 +87,29 @@
 
     </noscript>
     <style amp-custom>
+        .hamburger {
+            padding-left: 10px;
+        }
+
+        .sidebar {
+            padding: 10px;
+            margin: 0;
+        }
+
+        .sidebar>li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+        }
+
+        .close-sidebar {
+            font-size: 1.5em;
+            padding-left: 5px;
+        }
+
         body {
             font-family: "Allerta Stencil", serif;
 
@@ -156,21 +180,28 @@
 
 
 <body>
-        <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
-        </amp-auto-ads>
-    <header>
-<select onChange="window.location.href=this.value" name="pages" id="pages" amp-fx="parallax"
-    data-parallax-factor="1.75">
-            <option value="https://bcebel.github.io">Other Pages</option>
-            <option value="https://bcebel.github.io">Home</option>
-            <option value="/revolver.html">Beatles Revolver</option>
-            <option value="/rhcp.html">Red Hot Chili Peppers</option>
-            <option value="/pearljam.html">Pearl Jam</option>
-            <option value="/steviewonder.html">Stevie Wonder</option>
-            <option value="https://bcebel.github.io/Hot10">Hot 10!</option>
-        </select>
-
+    <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
+    </amp-auto-ads>
+    <header class="headerbar">
+        <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
+        <div class="site-name">MORE PAGES</div>
     </header>
+
+    <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
+        <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕
+        </div>
+        <ul class="sidebar">
+            <li><a href="https://bcebel.github.io">Home</a></li>
+
+            <li><a href="/revolver.html">Beatles Revolver</a></li>
+
+            <li><a href="/pearljam.html">Pearl Jam</a></li>
+            <li><a href="/rhcp.html">Red Hot Chili Peppers</a></li>
+            <li><a href="/pearljam.html">Pearl Jam</a></li>
+            <li><a href="/steviewonder.html">Stevie Wonder</a></li>
+            <li><a href="https://bcebel.github.io/Hot10">Hot10!</a></li>
+        </ul>
+    </amp-sidebar>
 
     <h1 amp-fx="parallax" data-parallax-factor="1.75">WUZICC</h1>
     <h1 amp-fx="parallax" data-parallax-factor="1.75">amplifying punk passion: music, rebellion, culture</h1>
@@ -178,29 +209,29 @@
 
     <div amp-fx="fade-in" data-duration="100ms">
         <h2>Stevie Wonder's Innervisions: A Musical Odyssey</h2>
-<amp-youtube class="yt" data-videoid="c11nwgMCi7M" layout="responsive" width="480" height="270"></amp-youtube>
+        <amp-youtube class="yt" data-videoid="c11nwgMCi7M" layout="responsive" width="480" height="270"></amp-youtube>
 
         <amp-youtube class="yt" data-videoid="UvtYEdYjkJM"
             data-param-playlist="UvtYEdYjkJM,fy4fMlLj_B8,ghLWjyOOLno,CXCTjAMR3eA,1esf0efHbjM,8o8FVoib92w,1surYguNfEg,RxsBc5p,uivvYGyQiow"
             layout="responsive" width="480" height="270"></amp-youtube>
-                <p>In the annals of music history, few artists have left an indelible mark as Stevie Wonder has. With his
-                    unparalleled
-                    talent, Wonder has transcended genres, eras, and expectations, leaving behind a legacy that continues to
-                    resonate. One
-                    of the pinnacle achievements in his illustrious career is the album "Innervisions," released in 1973. To
-                    truly
-                    appreciate the brilliance of this masterpiece, it is imperative to contextualize it within the broader
-                    spectrum of
-                    Wonder's discography, specifically his albums from the early 1970s: "Music of My Mind" (1972), "Talking
-                    Book" (1972),
-                    and "Fulfillingness' First Finale" (1974).</p>
+        <p>In the annals of music history, few artists have left an indelible mark as Stevie Wonder has. With his
+            unparalleled
+            talent, Wonder has transcended genres, eras, and expectations, leaving behind a legacy that continues to
+            resonate. One
+            of the pinnacle achievements in his illustrious career is the album "Innervisions," released in 1973. To
+            truly
+            appreciate the brilliance of this masterpiece, it is imperative to contextualize it within the broader
+            spectrum of
+            Wonder's discography, specifically his albums from the early 1970s: "Music of My Mind" (1972), "Talking
+            Book" (1972),
+            and "Fulfillingness' First Finale" (1974).</p>
         <a href="https://commons.wikimedia.org/wiki/File:Stevie_Wonder_1973.JPG?uselang=en#Licensing"
             title="Public Domain"></a><a href="https://commons.wikimedia.org/wiki/File:Stevie_Wonder_1973.JPG"><amp-img
                 class="phot" alt="Stevie Wonder Singing" src="./steviewonderimages/640px-Stevie_Wonder_1973.jpeg"
                 width="640" height="734" layout="responsive">
             </amp-img></a>
         <p>
-        
+
             "Innervisions" emerges amidst a backdrop of significant social and political upheaval. The early 1970s were
             a period of
             intense transformation, with issues like civil rights, Vietnam, and urban decay dominating the public

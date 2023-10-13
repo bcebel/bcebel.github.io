@@ -2,12 +2,13 @@
 <html amp lang="en">
 
 <head>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-fx-collection"
         src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
     <meta name="google-site-verification" content="HnA_UiFO5yQR6QanRVHVPwx4wCJ3n6gJNWU2D2xwMa4" />
-<script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
     <script async custom-element="amp-bodymovin-animation"
         src="https://cdn.ampproject.org/v0/amp-bodymovin-animation-0.1.js"></script>
 
@@ -85,6 +86,29 @@
 
     </noscript>
     <style amp-custom>
+        .hamburger {
+            padding-left: 10px;
+        }
+
+        .sidebar {
+            padding: 10px;
+            margin: 0;
+        }
+
+        .sidebar>li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+        }
+
+        .close-sidebar {
+            font-size: 1.5em;
+            padding-left: 5px;
+        }
+
         body {
             font-family: "Allerta Stencil", serif;
 
@@ -105,8 +129,8 @@
         h1 {
             text-align: center;
             background-color: rgb(255, 0, 0);
-            color:black;
-               border-radius: 2px;
+            color: black;
+            border-radius: 2px;
         }
 
         p {
@@ -127,7 +151,7 @@
         }
 
         .phot {
-                max-width: 85%;
+            max-width: 85%;
             height: auto;
             display: block;
             margin: 0 auto;
@@ -142,30 +166,39 @@
 
 
 <body>
-        <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
-        </amp-auto-ads>
-    <header><select onChange="window.location.href=this.value" name="pages" id="pages" amp-fx="parallax"
-        data-parallax-factor="1.75">
-        <option value="https://bcebel.github.io">Other Pages</option>
-        <option value="https://bcebel.github.io">Home</option>
-        <option value="/revolver.html">Beatles Revolver</option>
-        <option value="/rhcp.html">Red Hot Chili Peppers</option>
-                <option value="/pearljam.html">Pearl Jam</option>
-                            <option value="/steviewonder.html">Stevie Wonder</option>
+    <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
+    </amp-auto-ads>
+    <header class="headerbar">
+        <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
+        <div class="site-name">MORE PAGES</div>
 
-        <option value="https://bcebel.github.io/Hot10">Hot 10!</option>
-    </select>
-    
     </header>
-    
+
+    <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
+        <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕
+        </div>
+        <ul class="sidebar">
+            <li><a href="https://bcebel.github.io">Home</a></li>
+
+            <li><a href="/revolver.html">Beatles Revolver</a></li>
+
+            <li><a href="/pearljam.html">Pearl Jam</a></li>
+            <li><a href="/rhcp.html">Red Hot Chili Peppers</a></li>
+            <li><a href="/pearljam.html">Pearl Jam</a></li>
+            <li><a href="/steviewonder.html">Stevie Wonder</a></li>
+            <li><a href="https://bcebel.github.io/Hot10">Hot10!</a></li>
+        </ul>
+    </amp-sidebar>
+
     <h1 amp-fx="parallax" data-parallax-factor="1.75">WUZICC</h1>
     <h1 amp-fx="parallax" data-parallax-factor="1.75">amplifying punk passion: music, rebellion, culture</h1>
 
     <div amp-fx="fade-in fly-in-bottom" data-duration="750ms">
         <h2>Red Hot Chili Peppers: The Navarro Era - A Red Hot Minute of Artistic Exploration</h2>
-<p><a href="https://music.youtube.com/playlist?list=OLAK5uy_k0ji2bfpRw9H7luk2AajXQP8dR-oVK97k&si=k0In2ZR1hNVZ4lH9" target="_blank"
-        style="color:red;">Link to One Hot Minute Album on YouTube</a> </p>
-        <amp-img class="phot" alt="Dave Navarro playing guitar with a cigarette in his mouth" src="./images/navarro.jpg" width="647" height="800" layout="responsive">
+        <p><a href="https://music.youtube.com/playlist?list=OLAK5uy_k0ji2bfpRw9H7luk2AajXQP8dR-oVK97k&si=k0In2ZR1hNVZ4lH9"
+                target="_blank" style="color:red;">Link to One Hot Minute Album on YouTube</a> </p>
+        <amp-img class="phot" alt="Dave Navarro playing guitar with a cigarette in his mouth" src="./images/navarro.jpg"
+            width="647" height="800" layout="responsive">
         </amp-img>
 
 
@@ -183,7 +216,8 @@
     <div amp-fx="fade-in fly-in-bottom" data-duration="750ms">
 
         <h2>The Genesis of a New Era</h2>
-        <amp-img class="phot" alt="Red Hot Chili Peppers playing live" src="./images/rhcp.jpg" width="5020" height="2833" layout="responsive">
+        <amp-img class="phot" alt="Red Hot Chili Peppers playing live" src="./images/rhcp.jpg" width="5020"
+            height="2833" layout="responsive">
         </amp-img>
         <p>By the early 1990s, the Chili Peppers had already established themselves as a force to be reckoned with in
             the
@@ -198,7 +232,8 @@
     <div amp-fx="fade-in fly-in-bottom" data-duration="750ms">
 
         <h2>Artistic Collision and Synthesis</h2>
-        <amp-img class="phot" alt="Dave Navarro with a black bucket hat" src="./images/navarro2.jpg" width="587" height="646" layout="responsive">
+        <amp-img class="phot" alt="Dave Navarro with a black bucket hat" src="./images/navarro2.jpg" width="587"
+            height="646" layout="responsive">
         </amp-img>
         <p>
             The addition of Navarro brought a new dynamic to the band's creative process. His background in alternative
@@ -223,8 +258,8 @@
     <div amp-fx="fade-in fly-in-bottom" data-duration="750ms">
 
         <h2>Challenges and Triumphs</h2>
-        <amp-img class="phot" alt="John Frusciante playing guitar and singing" src="./images/frusciante.jpg" width="3000" height="4000"
-            layout="responsive">
+        <amp-img class="phot" alt="John Frusciante playing guitar and singing" src="./images/frusciante.jpg"
+            width="3000" height="4000" layout="responsive">
         </amp-img>
         <p>
             The "Red Hot Minute" era was not without its trials. The departure of Frusciante had left a significant void
@@ -246,7 +281,8 @@
     <div amp-fx="fade-in fly-in-bottom" data-duration="750ms">
 
         <h2>Live Performances: A Testament to Musical Dexterity</h2>
-        <amp-img class="phot" alt="Dave Navarro playing guitar" src="./images/navarro3.jpg" width="705" height="800" layout="responsive">
+        <amp-img class="phot" alt="Dave Navarro playing guitar" src="./images/navarro3.jpg" width="705" height="800"
+            layout="responsive">
         </amp-img>
         <p>
             One of the defining features of the Chili Peppers has always been their electrifying live performances. The
@@ -259,7 +295,8 @@
     </div>
     <div amp-fx="fade-in fly-in-bottom" data-duration="750ms">
         <h2>Legacy and Influence</h2>
-        <amp-img class="phot" alt="Red Hot Chili Peppers jamming out circa 2020" src="./images/rhcp3.jpg" width="1599" height="1066" layout="responsive">
+        <amp-img class="phot" alt="Red Hot Chili Peppers jamming out circa 2020" src="./images/rhcp3.jpg" width="1599"
+            height="1066" layout="responsive">
         </amp-img>
         <p>While the "Red Hot Minute" era represented a departure from the band's earlier sound, it remains a critical
             chapter in

@@ -2,11 +2,20 @@
 <html amp lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GT-K8KNQ53"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'GT-K8KNQ53');
+    </script>
     <!-- AMP Analytics -->
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-<meta name="description" content="muzzicc vinylyolo music site">
-<meta name="keywords" content="Pearl Jam No Code music rock jazz pop">
-<meta name="author" content="Brian Ebel">
+    <meta name="description" content="muzzicc vinylyolo music site">
+    <meta name="keywords" content="Pearl Jam No Code music rock jazz pop">
+    <meta name="author" content="Brian Ebel">
     <meta name="google-adsense-account" content="ca-pub-3239465181490887">
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
@@ -93,24 +102,28 @@
 
     </noscript>
     <style amp-custom>
- .hamburger {
-  padding-left: 10px;
-}
-.sidebar {
-  padding: 10px;
-  margin: 0;
-}
-.sidebar > li {
-  list-style: none;
-  margin-bottom:10px;
-}
-.sidebar a {
-  text-decoration: none;
-}
-.close-sidebar {
-  font-size: 1.5em;
-  padding-left: 5px;
-}
+        .hamburger {
+            padding-left: 10px;
+        }
+
+        .sidebar {
+            padding: 10px;
+            margin: 0;
+        }
+
+        .sidebar>li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+        }
+
+        .close-sidebar {
+            font-size: 1.5em;
+            padding-left: 5px;
+        }
 
         body {
             font-family: "Allerta Stencil", serif;
@@ -187,21 +200,21 @@
         <div class="site-name">MORE PAGES</div>
     </header>
 
-        <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
-            <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕
-            </div>
-            <ul class="sidebar">
-                <li><a href="https://bcebel.github.io">Home</a></li>
-        
-                <li><a href="/revolver.html">Beatles Revolver</a></li>
-        
-                <li><a href="/pearljam.html">Pearl Jam</a></li>
-                <li><a href="/rhcp.html">Red Hot Chili Peppers</a></li>
-                <li><a href="/pearljam.html">Pearl Jam</a></li>
-                <li><a href="/steviewonder.html">Stevie Wonder</a></li>
-                <li><a href="https://bcebel.github.io/Hot10">Hot10!</a></li>
-            </ul>
-        </amp-sidebar>
+    <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
+        <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕
+        </div>
+        <ul class="sidebar">
+            <li><a href="https://bcebel.github.io">Home</a></li>
+
+            <li><a href="/revolver.html">Beatles Revolver</a></li>
+
+            <li><a href="/pearljam.html">Pearl Jam</a></li>
+            <li><a href="/rhcp.html">Red Hot Chili Peppers</a></li>
+            <li><a href="/pearljam.html">Pearl Jam</a></li>
+            <li><a href="/steviewonder.html">Stevie Wonder</a></li>
+            <li><a href="https://bcebel.github.io/Hot10">Hot10!</a></li>
+        </ul>
+    </amp-sidebar>
 
     <h1 amp-fx="parallax" data-parallax-factor="1.75">muzzicc</h1>
     <h1 amp-fx="parallax" data-parallax-factor="1.75">amplifying punk passion: music, rebellion, culture</h1>

@@ -190,8 +190,18 @@
         "config" : {
           "G-L3SKF0FS1W": { "groups": "default" }
         }
-      }
-    }
+      },
+            "triggers": {
+        "button": {
+          "selector": "#the-button",
+          "on": "click",
+          "vars": {
+            "event_name": "login",
+            "method": "Google"
+                }   
+            }
+    }   
+}
     </script>
     </amp-analytics>
     <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-KLB4G4VC&gtm.url=SOURCE_URL"
@@ -331,7 +341,7 @@ Attribution 2.0 Generic"></a><a
             journey that
             transcends genres and eras, a journey through the heart and soul of music itself.</p>
     </div>
-
+    https://policies.google.com/technologies/partner-sites
     <amp-bodymovin-animation layout="responsive" width="500" height="400"
         src="https://lottie.host/21ae9c70-bc2e-45b8-84c0-1102fee7d163/oQfnTZlsdZ.json">
     </amp-bodymovin-animation>

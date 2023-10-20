@@ -7,21 +7,44 @@
     <loc>https://bcebel.github.io/index.html</loc>
   </sitemap>
   <sitemap>
-    <loc>ttps://bcebel.github.io/brian</loc>
+    <loc>https://bcebel.github.io/brian</loc>
   </sitemap>
     <sitemap>
-    <loc>ttps://bcebel.github.io/rhcp.html</loc>
+    <loc>https://bcebel.github.io/rhcp.html</loc>
   </sitemap>
     <sitemap>
-    <loc>ttps://bcebel.github.io/steviewonder.html</loc>
+    <loc>https://bcebel.github.io/steviewonder.html</loc>
   </sitemap>
     <sitemap>
-    <loc>ttps://bcebel.github.io/pearljam.html</loc>
+    <loc>https://bcebel.github.io/pearljam.html</loc>
   </sitemap>
     <sitemap>
-    <loc>ttps://bcebel.github.io/spacehog.html</loc>
+    <loc>https://bcebel.github.io/spacehog.html</loc>
   </sitemap>
     <sitemap>
-    <loc>ttps://bcebel.github.io/revolver.html</loc>
+    <loc>https://bcebel.github.io/revolver.html</loc>
   </sitemap>
+    <sitemap>
+    <loc>https://bcebel.github.io/revolver.html</loc>
+  </sitemap>
+    <sitemap>
+    <loc>https://bcebel.github.io/Hot10.html</loc>
+  </sitemap>
+    <sitemap>
+    <loc>https://bcebel.github.io/BrianPortfolio/</loc>
+  </sitemap>
+
+    <sitemap>
+    <loc>https://bcebel.github.io/energymap/</loc>
+  </sitemap>
+      <sitemap>
+    <loc>https://bcebel.github.io/biochar/</loc>
+  </sitemap>
+      <sitemap>
+    <loc>https://bcebel.github.io/met/</loc>
+  </sitemap>
+
+
+
+
 </sitemapindex>

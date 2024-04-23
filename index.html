@@ -1,364 +1,3472 @@
-<!doctype html>
+<!DOCTYPE html>
+
+<!---
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+      http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
 <html amp lang="en">
 
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GT-K8KNQ53"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+<head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GT-K8KNQ53"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
 
-        gtag('config', 'GT-K8KNQ53');
-    </script>
-    <meta name="google-adsense-account" content="ca-pub-3239465181490887">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
-
-    <meta name="description" content="muzzicc vinylyolo music site">
-    <meta name="keywords" content="music rock jazz pop">
-    <meta name="author" content="Brian Ebel">
-    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-    <script async custom-element="amp-fx-collection"
-        src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
-
-    <meta name="google-site-verification" content="HnA_UiFO5yQR6QanRVHVPwx4wCJ3n6gJNWU2D2xwMa4" />
-    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-    </script>
-    <script async custom-element="amp-bodymovin-animation"
-        src="https://cdn.ampproject.org/v0/amp-bodymovin-animation-0.1.js"></script>
-
-    <meta charset="utf-8">
-
-    <title>muzzicc</title>
-    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <style amp-boilerplate>
-        body {
-            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-            animation: -amp-start 8s steps(1, end) 0s 1 normal both
-        }
-
-        @-webkit-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-
-            to {
-                visibility: visible
-            }
-        }
-
-        @-moz-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-
-            to {
-                visibility: visible
-            }
-        }
-
-        @-ms-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-
-            to {
-                visibility: visible
-            }
-        }
-
-        @-o-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-
-            to {
-                visibility: visible
-            }
-        }
-
-        @keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-
-            to {
-                visibility: visible
-            }
-        }
-    </style><noscript>
-        <style amp-boilerplate>
-            body {
-                -webkit-animation: none;
-                -moz-animation: none;
-                -ms-animation: none;
-                animation: none
-            }
-        </style>
-    </noscript>
-    <style amp-custom>
-        .hamburger {
-            padding-left: 10px;
-        }
-
-        .sidebar {
-            padding: 10px;
-            margin: 0;
-        }
-
-        .sidebar>li {
-            list-style: none;
-            margin-bottom: 10px;
-        }
-
-        .sidebar a {
-            text-decoration: none;
-        }
-
-        .close-sidebar {
-            font-size: 1.5em;
-            padding-left: 5px;
-        }
-
-        body {
-            font-family: "Allerta Stencil", serif;
-
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-            color: rgb(255, 255, 255);
-
-            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(10, 10, 81) 35%, rgb(0, 0, 0) 100%);
-            background: opacity(0.9);
-
-            padding: 2em;
-            border-width: 2em;
-            border-style: solid;
-            border-color: black;
-
-        }
-
-        h1 {
-            text-align: center;
-            background-color: rgb(255, 0, 0);
-            color: black;
-            border-radius: 2px;
-        }
-
-        p {
-            margin-bottom: 20px;
-        }
-
-        ul {
-            margin-bottom: 20px;
-        }
-
-        li {
-            margin-bottom: 5px;
-        }
-
-        .sun-emoji {
-            font-size: 1.5em;
-            vertical-align: middle;
-        }
-
-        .phot {
+  gtag('config', 'GT-K8KNQ53');
+</script>
+  <meta charset="utf-8" />
+  <title>Brian C. Ebel</title>
+  <link rel="canonical" href="https://www.ampstart.com/templates/gallery.amp" />
+  <meta name="description" content="Brian Ebel Web Developer">
+  <meta name="keywords"
+    content="HTML, CSS, JavaScript, React, ArcGIS, Environmental, Coding, Frontend, Backend, Full-Stack, Front End, Back End, New Hampshire, Boston, New England, Remote, bcebel, github">
+  <meta name="author" content="Brian Ebel">
+  <meta name="viewport" content="width=device-width" />
+  <meta name="amp-google-client-id-api" content="googleanalytics" />
+  <link rel="preload" fetchpriority="high" as="image" href="./img/gallery/hot10@2x.webp" type="image/webp">
+  <link rel="preload" fetchpriority="high" as="image" href="./img/gallery/hot10.webp" type="image/webp">
+  <link rel="preload" fetchpriority="high" as="image" href="./img/gallery/energymap@2x.webp" type="image/webp">
+  <link rel="preload" fetchpriority="high" as="image" href="./img/gallery/energymap.webp" type="image/webp">
 
 
-            min-height: 4vh;
-            display: block;
-            margin: 0 auto;
-            border-radius: 5em;
-            border-color: rgb(0, 0, 0);
-            border-width: .5em;
-            border-style: solid;
+  <script async="" src="https://cdn.ampproject.org/v0.js"></script>
 
-        }
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    }
 
-        .ani {
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
 
-            z-index: -5;
-            position: relative;
-        }
+      to {
+        visibility: visible;
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+  </style>
+  <noscript>
+    <style amp-boilerplate="">
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none;
+      }
     </style>
+  </noscript>
+
+  <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>
+  <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async=""></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet" />
+
+  <style amp-custom>
+    /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
+
+    /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
+
+    /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+    html {
+      font-family: sans-serif;
+      line-height: 1.15;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    article,
+    aside,
+    footer,
+    header,
+    nav,
+    section {
+      display: block;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 0.67em 0;
+    }
+
+    figcaption,
+    figure,
+    main {
+      display: block;
+    }
+
+    figure {
+      margin: 1em 40px;
+    }
+
+    hr {
+      box-sizing: content-box;
+      height: 0;
+      overflow: visible;
+    }
+
+    pre {
+      font-family: monospace, monospace;
+      font-size: 1em;
+    }
+
+    a {
+      background-color: transparent;
+      -webkit-text-decoration-skip: objects;
+    }
+
+    a:active,
+    a:hover {
+      outline-width: 0;
+    }
+
+    abbr[title] {
+      border-bottom: none;
+      text-decoration: underline;
+      text-decoration: underline dotted;
+    }
+
+    b,
+    strong {
+      font-weight: inherit;
+      font-weight: bolder;
+    }
+
+    code,
+    kbd,
+    samp {
+      font-family: monospace, monospace;
+      font-size: 1em;
+    }
+
+    dfn {
+      font-style: italic;
+    }
+
+    mark {
+      background-color: #ff0;
+      color: #000;
+    }
+
+    small {
+      font-size: 80%;
+    }
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    sub {
+      bottom: -0.25em;
+    }
+
+    sup {
+      top: -0.5em;
+    }
+
+    audio,
+    video {
+      display: inline-block;
+    }
+
+    audio:not([controls]) {
+      display: none;
+      height: 0;
+    }
+
+    img {
+      border-style: none;
+    }
+
+    svg:not(:root) {
+      overflow: hidden;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: sans-serif;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    input {
+      overflow: visible;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    [type='reset'],
+    [type='submit'],
+    button,
+    html [type='button'] {
+      -webkit-appearance: button;
+      appearance: button;
+    }
+
+    [type='button']::-moz-focus-inner,
+    [type='reset']::-moz-focus-inner,
+    [type='submit']::-moz-focus-inner,
+    button::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    [type='button']:-moz-focusring,
+    [type='reset']:-moz-focusring,
+    [type='submit']:-moz-focusring,
+    button:-moz-focusring {
+      outline: 1px dotted ButtonText;
+    }
+
+    fieldset {
+      border: 1px solid silver;
+      margin: 0 2px;
+      padding: 0.35em 0.625em 0.75em;
+    }
+
+    legend {
+      box-sizing: border-box;
+      color: inherit;
+      display: table;
+      max-width: 100%;
+      padding: 0;
+      white-space: normal;
+    }
+
+    progress {
+      display: inline-block;
+      vertical-align: baseline;
+    }
+
+    textarea {
+      overflow: auto;
+    }
+
+    [type='checkbox'],
+    [type='radio'] {
+      box-sizing: border-box;
+      padding: 0;
+    }
+
+    [type='number']::-webkit-inner-spin-button,
+    [type='number']::-webkit-outer-spin-button {
+      height: auto;
+    }
+
+    [type='search'] {
+      -webkit-appearance: textfield;
+      appearance: textfield;
+      outline-offset: -2px;
+    }
+
+    [type='search']::-webkit-search-cancel-button,
+    [type='search']::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit;
+    }
+
+    details,
+    menu {
+      display: block;
+    }
+
+    summary {
+      display: list-item;
+    }
+
+    canvas {
+      display: inline-block;
+    }
+
+    [hidden],
+    template {
+      display: none;
+    }
+
+    .h00 {
+      font-size: 4rem;
+    }
+
+    .h0,
+    .h1 {
+      font-size: 3rem;
+    }
+
+    .h2 {
+      font-size: 2rem;
+    }
+
+    .h3 {
+      font-size: 1.5rem;
+    }
+
+    .h4 {
+      font-size: 1.125rem;
+    }
+
+    .h5 {
+      font-size: 0.875rem;
+    }
+
+    .h6 {
+      font-size: 0.75rem;
+    }
+
+    .font-family-inherit {
+      font-family: inherit;
+    }
+
+    .font-size-inherit {
+      font-size: inherit;
+    }
+
+    .text-decoration-none {
+      text-decoration: none;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+
+    .regular {
+      font-weight: 400;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .caps {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+
+    .left-align {
+      text-align: left;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .right-align {
+      text-align: right;
+    }
+
+    .justify {
+      text-align: justify;
+    }
+
+    .nowrap {
+      white-space: nowrap;
+    }
+
+    .break-word {
+      word-wrap: break-word;
+    }
+
+    .line-height-1 {
+      line-height: 1rem;
+    }
+
+    .line-height-2 {
+      line-height: 1.125rem;
+    }
+
+    .line-height-3 {
+      line-height: 1.5rem;
+    }
+
+    .line-height-4 {
+      line-height: 2rem;
+    }
+
+    .list-style-none {
+      list-style: none;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+
+    .truncate {
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .list-reset {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .inline {
+      display: inline;
+    }
+
+    .block {
+      display: block;
+    }
+
+    .inline-block {
+      display: inline-block;
+    }
+
+    .table {
+      display: table;
+    }
+
+    .table-cell {
+      display: table-cell;
+    }
+
+    .overflow-hidden {
+      overflow: hidden;
+    }
+
+    .overflow-scroll {
+      overflow: scroll;
+    }
+
+    .overflow-auto {
+      overflow: auto;
+    }
+
+    .clearfix:after,
+    .clearfix:before {
+      content: ' ';
+      display: table;
+    }
+
+    .clearfix:after {
+      clear: both;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    .fit {
+      max-width: 100%;
+    }
+
+    .max-width-1 {
+      max-width: 24rem;
+    }
+
+    .max-width-2 {
+      max-width: 32rem;
+    }
+
+    .max-width-3 {
+      max-width: 48rem;
+    }
+
+    .max-width-4 {
+      max-width: 64rem;
+    }
+
+    .border-box {
+      box-sizing: border-box;
+    }
+
+    .align-baseline {
+      vertical-align: baseline;
+    }
+
+    .align-top {
+      vertical-align: top;
+    }
+
+    .align-middle {
+      vertical-align: middle;
+    }
+
+    .align-bottom {
+      vertical-align: bottom;
+    }
+
+    .m0 {
+      margin: 0;
+    }
+
+    .mt0 {
+      margin-top: 0;
+    }
+
+    .mr0 {
+      margin-right: 0;
+    }
+
+    .mb0 {
+      margin-bottom: 0;
+    }
+
+    .ml0,
+    .mx0 {
+      margin-left: 0;
+    }
+
+    .mx0 {
+      margin-right: 0;
+    }
+
+    .my0 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .m1 {
+      margin: 0.5rem;
+    }
+
+    .mt1 {
+      margin-top: 0.5rem;
+    }
+
+    .mr1 {
+      margin-right: 0.5rem;
+    }
+
+    .mb1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .ml1,
+    .mx1 {
+      margin-left: 0.5rem;
+    }
+
+    .mx1 {
+      margin-right: 0.5rem;
+    }
+
+    .my1 {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .m2 {
+      margin: 1rem;
+    }
+
+    .mt2 {
+      margin-top: 1rem;
+    }
+
+    .mr2 {
+      margin-right: 1rem;
+    }
+
+    .mb2 {
+      margin-bottom: 1rem;
+    }
+
+    .ml2,
+    .mx2 {
+      margin-left: 1rem;
+    }
+
+    .mx2 {
+      margin-right: 1rem;
+    }
+
+    .my2 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .m3 {
+      margin: 1.5rem;
+    }
+
+    .mt3 {
+      margin-top: 1.5rem;
+    }
+
+    .mr3 {
+      margin-right: 1.5rem;
+    }
+
+    .mb3 {
+      margin-bottom: 1.5rem;
+    }
+
+    .ml3,
+    .mx3 {
+      margin-left: 1.5rem;
+    }
+
+    .mx3 {
+      margin-right: 1.5rem;
+    }
+
+    .my3 {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .m4 {
+      margin: 2rem;
+    }
+
+    .mt4 {
+      margin-top: 2rem;
+    }
+
+    .mr4 {
+      margin-right: 2rem;
+    }
+
+    .mb4 {
+      margin-bottom: 2rem;
+    }
+
+    .ml4,
+    .mx4 {
+      margin-left: 2rem;
+    }
+
+    .mx4 {
+      margin-right: 2rem;
+    }
+
+    .my4 {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .mxn1 {
+      margin-left: calc(0.5rem * -1);
+      margin-right: calc(0.5rem * -1);
+    }
+
+    .mxn2 {
+      margin-left: calc(1rem * -1);
+      margin-right: calc(1rem * -1);
+    }
+
+    .mxn3 {
+      margin-left: calc(1.5rem * -1);
+      margin-right: calc(1.5rem * -1);
+    }
+
+    .mxn4 {
+      margin-left: calc(2rem * -1);
+      margin-right: calc(2rem * -1);
+    }
+
+    .m-auto {
+      margin: auto;
+    }
+
+    .mt-auto {
+      margin-top: auto;
+    }
+
+    .mr-auto {
+      margin-right: auto;
+    }
+
+    .mb-auto {
+      margin-bottom: auto;
+    }
+
+    .ml-auto,
+    .mx-auto {
+      margin-left: auto;
+    }
+
+    .mx-auto {
+      margin-right: auto;
+    }
+
+    .my-auto {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .p0 {
+      padding: 0;
+    }
+
+    .pt0 {
+      padding-top: 0;
+    }
+
+    .pr0 {
+      padding-right: 0;
+    }
+
+    .pb0 {
+      padding-bottom: 0;
+    }
+
+    .pl0,
+    .px0 {
+      padding-left: 0;
+    }
+
+    .px0 {
+      padding-right: 0;
+    }
+
+    .py0 {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .p1 {
+      padding: 0.5rem;
+    }
+
+    .pt1 {
+      padding-top: 0.5rem;
+    }
+
+    .pr1 {
+      padding-right: 0.5rem;
+    }
+
+    .pb1 {
+      padding-bottom: 0.5rem;
+    }
+
+    .pl1 {
+      padding-left: 0.5rem;
+    }
+
+    .py1 {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .px1 {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    .p2 {
+      padding: 1rem;
+    }
+
+    .pt2 {
+      padding-top: 1rem;
+    }
+
+    .pr2 {
+      padding-right: 1rem;
+    }
+
+    .pb2 {
+      padding-bottom: 1rem;
+    }
+
+    .pl2 {
+      padding-left: 1rem;
+    }
+
+    .py2 {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .px2 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .p3 {
+      padding: 1.5rem;
+    }
+
+    .pt3 {
+      padding-top: 1.5rem;
+    }
+
+    .pr3 {
+      padding-right: 1.5rem;
+    }
+
+    .pb3 {
+      padding-bottom: 1.5rem;
+    }
+
+    .pl3 {
+      padding-left: 1.5rem;
+    }
+
+    .py3 {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .px3 {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    .p4 {
+      padding: 2rem;
+    }
+
+    .pt4 {
+      padding-top: 2rem;
+    }
+
+    .pr4 {
+      padding-right: 2rem;
+    }
+
+    .pb4 {
+      padding-bottom: 2rem;
+    }
+
+    .pl4 {
+      padding-left: 2rem;
+    }
+
+    .py4 {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .px4 {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .col {
+      float: left;
+    }
+
+    .col,
+    .col-right {
+      box-sizing: border-box;
+    }
+
+    .col-right {
+      float: right;
+    }
+
+    .col-1 {
+      width: 8.33333%;
+    }
+
+    .col-2 {
+      width: 16.66667%;
+    }
+
+    .col-3 {
+      width: 25%;
+    }
+
+    .col-4 {
+      width: 33.33333%;
+    }
+
+    .col-5 {
+      width: 41.66667%;
+    }
+
+    .col-6 {
+      width: 50%;
+    }
+
+    .col-7 {
+      width: 58.33333%;
+    }
+
+    .col-8 {
+      width: 66.66667%;
+    }
+
+    .col-9 {
+      width: 75%;
+    }
+
+    .col-10 {
+      width: 83.33333%;
+    }
+
+    .col-11 {
+      width: 91.66667%;
+    }
+
+    .col-12 {
+      width: 100%;
+    }
+
+    @media (min-width: 40.06rem) {
+      .sm-col {
+        float: left;
+        box-sizing: border-box;
+      }
+
+      .sm-col-right {
+        float: right;
+        box-sizing: border-box;
+      }
+
+      .sm-col-1 {
+        width: 8.33333%;
+      }
+
+      .sm-col-2 {
+        width: 16.66667%;
+      }
+
+      .sm-col-3 {
+        width: 25%;
+      }
+
+      .sm-col-4 {
+        width: 33.33333%;
+      }
+
+      .sm-col-5 {
+        width: 41.66667%;
+      }
+
+      .sm-col-6 {
+        width: 50%;
+      }
+
+      .sm-col-7 {
+        width: 58.33333%;
+      }
+
+      .sm-col-8 {
+        width: 66.66667%;
+      }
+
+      .sm-col-9 {
+        width: 75%;
+      }
+
+      .sm-col-10 {
+        width: 83.33333%;
+      }
+
+      .sm-col-11 {
+        width: 91.66667%;
+      }
+
+      .sm-col-12 {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: 52.06rem) {
+      .md-col {
+        float: left;
+        box-sizing: border-box;
+      }
+
+      .md-col-right {
+        float: right;
+        box-sizing: border-box;
+      }
+
+      .md-col-1 {
+        width: 8.33333%;
+      }
+
+      .md-col-2 {
+        width: 16.66667%;
+      }
+
+      .md-col-3 {
+        width: 25%;
+      }
+
+      .md-col-4 {
+        width: 33.33333%;
+      }
+
+      .md-col-5 {
+        width: 41.66667%;
+      }
+
+      .md-col-6 {
+        width: 50%;
+      }
+
+      .md-col-7 {
+        width: 58.33333%;
+      }
+
+      .md-col-8 {
+        width: 66.66667%;
+      }
+
+      .md-col-9 {
+        width: 75%;
+      }
+
+      .md-col-10 {
+        width: 83.33333%;
+      }
+
+      .md-col-11 {
+        width: 91.66667%;
+      }
+
+      .md-col-12 {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: 64.06rem) {
+      .lg-col {
+        float: left;
+        box-sizing: border-box;
+      }
+
+      .lg-col-right {
+        float: right;
+        box-sizing: border-box;
+      }
+
+      .lg-col-1 {
+        width: 8.33333%;
+      }
+
+      .lg-col-2 {
+        width: 16.66667%;
+      }
+
+      .lg-col-3 {
+        width: 25%;
+      }
+
+      .lg-col-4 {
+        width: 33.33333%;
+      }
+
+      .lg-col-5 {
+        width: 41.66667%;
+      }
+
+      .lg-col-6 {
+        width: 50%;
+      }
+
+      .lg-col-7 {
+        width: 58.33333%;
+      }
+
+      .lg-col-8 {
+        width: 66.66667%;
+      }
+
+      .lg-col-9 {
+        width: 75%;
+      }
+
+      .lg-col-10 {
+        width: 83.33333%;
+      }
+
+      .lg-col-11 {
+        width: 91.66667%;
+      }
+
+      .lg-col-12 {
+        width: 100%;
+      }
+    }
+
+    .flex {
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+    @media (min-width: 40.06rem) {
+      .sm-flex {
+        display: -ms-flexbox;
+        display: flex;
+      }
+    }
+
+    @media (min-width: 52.06rem) {
+      .md-flex {
+        display: -ms-flexbox;
+        display: flex;
+      }
+    }
+
+    @media (min-width: 64.06rem) {
+      .lg-flex {
+        display: -ms-flexbox;
+        display: flex;
+      }
+    }
+
+    .flex-column {
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+
+    .flex-wrap {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+    .items-start {
+      -ms-flex-align: start;
+      align-items: flex-start;
+    }
+
+    .items-end {
+      -ms-flex-align: end;
+      align-items: flex-end;
+    }
+
+    .items-center {
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .items-baseline {
+      -ms-flex-align: baseline;
+      align-items: baseline;
+    }
+
+    .items-stretch {
+      -ms-flex-align: stretch;
+      align-items: stretch;
+    }
+
+    .self-start {
+      -ms-flex-item-align: start;
+      align-self: flex-start;
+    }
+
+    .self-end {
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+    }
+
+    .self-center {
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+    }
+
+    .self-baseline {
+      -ms-flex-item-align: baseline;
+      align-self: baseline;
+    }
+
+    .self-stretch {
+      -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+    }
+
+    .justify-start {
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+    }
+
+    .justify-end {
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+    }
+
+    .justify-center {
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+
+    .justify-between {
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+
+    .justify-around {
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+    }
+
+    .justify-evenly {
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+    }
+
+    .content-start {
+      -ms-flex-line-pack: start;
+      align-content: flex-start;
+    }
+
+    .content-end {
+      -ms-flex-line-pack: end;
+      align-content: flex-end;
+    }
+
+    .content-center {
+      -ms-flex-line-pack: center;
+      align-content: center;
+    }
+
+    .content-between {
+      -ms-flex-line-pack: justify;
+      align-content: space-between;
+    }
+
+    .content-around {
+      -ms-flex-line-pack: distribute;
+      align-content: space-around;
+    }
+
+    .content-stretch {
+      -ms-flex-line-pack: stretch;
+      align-content: stretch;
+    }
+
+    .flex-auto {
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      min-width: 0;
+      min-height: 0;
+    }
+
+    .flex-none {
+      -ms-flex: none;
+      flex: none;
+    }
+
+    .order-0 {
+      -ms-flex-order: 0;
+      order: 0;
+    }
+
+    .order-1 {
+      -ms-flex-order: 1;
+      order: 1;
+    }
+
+    .order-2 {
+      -ms-flex-order: 2;
+      order: 2;
+    }
+
+    .order-3 {
+      -ms-flex-order: 3;
+      order: 3;
+    }
+
+    .order-last {
+      -ms-flex-order: 99999;
+      order: 99999;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .absolute {
+      position: absolute;
+    }
+
+    .fixed {
+      position: fixed;
+    }
+
+    .top-0 {
+      top: 0;
+    }
+
+    .right-0 {
+      right: 0;
+    }
+
+    .bottom-0 {
+      bottom: 0;
+    }
+
+    .left-0 {
+      left: 0;
+    }
+
+    .z1 {
+      z-index: 1;
+    }
+
+    .z2 {
+      z-index: 2;
+    }
+
+    .z3 {
+      z-index: 3;
+    }
+
+    .z4 {
+      z-index: 4;
+    }
+
+    .border {
+      border-style: solid;
+      border-width: 1px;
+    }
+
+    .border-top {
+      border-top-style: solid;
+      border-top-width: 1px;
+    }
+
+    .border-right {
+      border-right-style: solid;
+      border-right-width: 1px;
+    }
+
+    .border-bottom {
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+    }
+
+    .border-left {
+      border-left-style: solid;
+      border-left-width: 1px;
+    }
+
+    .border-none {
+      border: 0;
+    }
+
+    .rounded {
+      border-radius: 3px;
+    }
+
+    .circle {
+      border-radius: 50%;
+    }
+
+    .rounded-top {
+      border-radius: 3px 3px 0 0;
+    }
+
+    .rounded-right {
+      border-radius: 0 3px 3px 0;
+    }
+
+    .rounded-bottom {
+      border-radius: 0 0 3px 3px;
+    }
+
+    .rounded-left {
+      border-radius: 3px 0 0 3px;
+    }
+
+    .not-rounded {
+      border-radius: 0;
+    }
+
+    .hide {
+      position: absolute;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+    }
+
+
+
+    @media (min-width: 40.06rem) and (max-width: 52rem) {
+      .sm-hide {
+        display: none;
+      }
+    }
+
+    @media (min-width: 52.06rem) and (max-width: 64rem) {
+      .md-hide {
+        display: none;
+      }
+    }
+
+    @media (min-width: 64.06rem) {
+      .lg-hide {
+        display: none;
+      }
+    }
+
+    .display-none {
+      display: none;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fff;
+      color: #4a4a4a;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial,
+        sans-serif;
+      min-width: 315px;
+      overflow-x: hidden;
+      font-smooth: always;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    .ampstart-accent {
+      color: #003f93;
+    }
+
+    #content:target {
+      margin-top: calc(0px - 3.5rem);
+      padding-top: 3.5rem;
+    }
+
+    .ampstart-title-lg {
+      font-size: 3rem;
+      line-height: 3.5rem;
+      letter-spacing: 0.06rem;
+    }
+
+    .ampstart-title-md {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.06rem;
+    }
+
+    .ampstart-title-sm {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      letter-spacing: 0.06rem;
+    }
+
+    .ampstart-subtitle,
+    body {
+      line-height: 1.5rem;
+      letter-spacing: normal;
+    }
+
+    .ampstart-subtitle {
+      color: #003f93;
+      font-size: 1rem;
+    }
+
+    .ampstart-byline,
+    .ampstart-caption,
+    .ampstart-hint,
+    .ampstart-label {
+      font-size: 0.875rem;
+      color: #4f4f4f;
+      line-height: 1.125rem;
+      letter-spacing: 0.06rem;
+    }
+
+    .ampstart-label {
+      text-transform: uppercase;
+    }
+
+    .ampstart-footer,
+    .ampstart-small-text {
+      font-size: 0.75rem;
+      line-height: 1rem;
+      letter-spacing: 0.06rem;
+    }
+
+    .ampstart-card {
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1px 1px -1px rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .h1,
+    h1 {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+
+    .h2,
+    h2 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+
+    .h3,
+    h3 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    .h4,
+    h4 {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+
+    .h5,
+    h5 {
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+    }
+
+    .h6,
+    h6 {
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      letter-spacing: 0.06rem;
+    }
+
+    a,
+    a:active,
+    a:visited {
+      color: inherit;
+    }
+
+    .ampstart-btn {
+      font-family: inherit;
+      font-weight: inherit;
+      font-size: 1rem;
+      line-height: 1.125rem;
+      padding: 0.7em 0.8em;
+      text-decoration: none;
+      white-space: nowrap;
+      word-wrap: normal;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #3f4ae6;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+
+    .ampstart-btn:visited {
+      color: #fff;
+    }
+
+    .ampstart-btn-secondary {
+      background-color: #ff5774;
+      color: #000;
+      border: 1px solid #000;
+    }
+
+    .ampstart-btn-secondary:visited {
+      color: #000;
+    }
+
+    .ampstart-btn:active .ampstart-btn:focus {
+      opacity: 0.8;
+    }
+
+    .ampstart-btn[disabled],
+    .ampstart-btn[disabled]:active,
+    .ampstart-btn[disabled]:focus,
+    .ampstart-btn[disabled]:hover {
+      opacity: 0.5;
+      outline: 0;
+      cursor: default;
+    }
+
+    .ampstart-dropcap:first-letter {
+      color: #000;
+      font-size: 3rem;
+      font-weight: 700;
+      float: left;
+      overflow: hidden;
+      line-height: 3rem;
+      margin-left: 0;
+      margin-right: 0.5rem;
+    }
+
+    .ampstart-initialcap {
+      padding-top: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .ampstart-initialcap:first-letter {
+      color: #000;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-left: -2px;
+    }
+
+    .ampstart-pullquote {
+      border: none;
+      border-left: 4px solid #3f4ae6;
+      font-size: 1.5rem;
+      padding-left: 1.5rem;
+    }
+
+    body {
+      color: #000;
+      font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI,
+        Roboto, sans-serif;
+      line-height: 1.6;
+    }
+
+    .gallery-base-content {
+      background: #c2c2c2;
+    }
+
+    .gallery-base-container {
+      position: relative;
+      width: calc(0.46 * 100vw + 9.375 * 1.025rem);
+      max-width: 50rem;
+    }
+
+    .gallery-base-invert {
+      color: #fff;
+      mix-blend-mode: difference;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .ampstart-headerbar {
+      z-index: 1;
+    }
+
+    .gallery-base-callout {
+      margin: 0 0 3.5rem;
+      font-size: 1.25rem;
+      color: #3f4ae6;
+      font-weight: 500;
+    }
+
+    .gallery-base-section:not(:last-child) {
+      margin-bottom: 8rem;
+    }
+
+    .gallery-base-rich-text h2 {
+      font-size: 2rem;
+    }
+
+    .gallery-base-rich-text address,
+    .gallery-base-rich-text h2 {
+      font-family: Oswald, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+        sans-serif;
+      letter-spacing: 0.05rem;
+    }
+
+    .gallery-base-rich-text address {
+      font-size: 1.125rem;
+      font-style: normal;
+    }
+
+    .gallery-base-rich-text p {
+      line-height: 1.8;
+    }
+
+    .gallery-base-rich-text blockquote {
+      margin: 0 0 3.5rem;
+      font-size: 1.5rem;
+      color: #3f4ae6;
+      font-weight: 600;
+    }
+
+    .gallery-base-section {
+      font-size: 1.12rem;
+    }
+
+    .gallery-inner-offset-img {
+      margin-left: 0;
+    }
+
+    @media (min-width: 40.06rem) {
+      .gallery-inner-offset-img {
+        margin-left: -6.25rem;
+      }
+    }
+
+    .gallery-inner-background-1 {
+      position: absolute;
+      width: calc(20vmin + 12.5 * 1rem);
+      left: calc(20vw - 10 * 1rem);
+      top: 140vh;
+      overflow: hidden;
+    }
+
+    .gallery-inner-background-2 {
+      position: absolute;
+      width: calc(100vmin + 25 * 1rem);
+      left: 40vw;
+      top: 10vh;
+      overflow: hidden;
+    }
+
+    .gallery-inner-perspective {
+      perspective: 2500px;
+      transform-style: preserve-3d;
+    }
+
+    .gallery-inner-3d-row {
+      margin-bottom: 24rem;
+      padding-bottom: 120%;
+      position: relative;
+    }
+
+    @media (min-width: 52.06rem) {
+      .gallery-inner-3d-row {
+        margin-bottom: 0;
+        padding-bottom: 40%;
+      }
+    }
+
+    .gallery-inner-3d-row-img-center,
+    .gallery-inner-3d-row-img-left,
+    .gallery-inner-3d-row-img-right {
+      position: absolute;
+      transition: transform 0.5s;
+    }
+
+    .gallery-inner-3d-row-img-center amp-img,
+    .gallery-inner-3d-row-img-left amp-img,
+    .gallery-inner-3d-row-img-right amp-img {
+      transition: box-shadow 0.5s;
+      box-shadow: 0 30px 60px rgba(6, 7, 22, 0.15);
+    }
+
+    .gallery-inner-3d-row-img-left {
+      width: 80%;
+      left: -10%;
+      top: -10%;
+      transform: rotateX(-12deg) rotateY(20deg) rotate(2deg);
+    }
+
+    .gallery-inner-3d-row-img-center {
+      width: 90%;
+      left: 3%;
+      top: 88%;
+      z-index: 1;
+      transform: translateZ(120px) rotateX(-6deg) rotateY(-1deg);
+    }
+
+    .gallery-inner-3d-row-img-right {
+      width: 65%;
+      right: -10%;
+      top: 35%;
+      transform: translateZ(60px) rotateY(-40deg);
+    }
+
+    @media (min-width: 52.06rem) {
+      .gallery-inner-3d-row-img-left {
+        width: 40%;
+        left: -20%;
+        top: -18%;
+      }
+
+      .gallery-inner-3d-row-img-center {
+        width: 40%;
+        left: 5%;
+        top: 10%;
+      }
+
+      .gallery-inner-3d-row-img-right {
+        width: 30%;
+        right: 3%;
+        top: -25%;
+      }
+    }
+
+    .gallery-inner-3d-row-img-center:hover,
+    .gallery-inner-3d-row-img-left:hover,
+    .gallery-inner-3d-row-img-right:hover {
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .gallery-inner-3d-row-img-center:hover,
+    .gallery-inner-3d-row-img-left:hover,
+    .gallery-inner-3d-row-img-right:hover {
+      transform: translateZ(200px);
+    }
+
+    .gallery-inner-3d-row-img-center:hover amp-img,
+    .gallery-inner-3d-row-img-left:hover amp-img,
+    .gallery-inner-3d-row-img-right:hover amp-img {
+      transition: box-shadow 0.25s;
+      box-shadow: 0 30px 80px rgba(6, 7, 22, 0.15);
+    }
+
+    @media (min-width: 52.06rem) {
+      .gallery-inner-img-right {
+        margin-left: -5.625rem;
+      }
+    }
+
+    .gallery-inner-img-right-small {
+      margin-top: -3.75rem;
+      float: right;
+    }
+
+    @media (min-width: 40.06rem) {
+      .gallery-inner-img-right-small {
+        margin-top: 0;
+      }
+    }
+
+    .gallery-recommended-image img {
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
+    .gallery-related-section-items li:first-child .gallery-recommended-image {
+      transform: matrix3d(1.534047,
+          0.12295,
+          0,
+          0.001049,
+          0.081503,
+          1.335949,
+          0,
+          0.000489,
+          0,
+          0,
+          1,
+          0,
+          -49.863192,
+          -29.415962,
+          0,
+          1);
+      box-shadow: 1vh 6vh 5vh rgba(6, 7, 22, 0.15);
+    }
+
+    .gallery-related-section-items li:nth-child(2) .gallery-recommended-image {
+      transform: matrix3d(1.104404,
+          -0.050629,
+          0,
+          0.000115,
+          0.223984,
+          1.35379,
+          0,
+          0.000809,
+          0,
+          0,
+          1,
+          0,
+          -24.574335,
+          -22.172093,
+          0,
+          1);
+      transform-origin: 0 0;
+      box-shadow: 0.5vh 3vh 4vh rgba(6, 7, 22, 0.15);
+    }
+
+    .gallery-related-section-items li:nth-child(3) .gallery-recommended-image {
+      transform: matrix3d(0.819634,
+          -0.109733,
+          0,
+          -0.000154,
+          -0.11382,
+          0.81154,
+          0,
+          -0.000399,
+          0,
+          0,
+          1,
+          0,
+          33.10833,
+          33.633254,
+          0,
+          1);
+      transform-origin: 0 0;
+      box-shadow: 1.5vh 4vh 5vh rgba(6, 7, 22, 0.15);
+    }
+
+    .gallery-recommended-image {
+      background: #eee;
+      transform-origin: 0 0;
+      margin-bottom: 1.5rem;
+      transition: box-shadow 0.2s ease-in-out;
+    }
+
+    .ampstart-image-with-caption {
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .gallery-related-section-items li:hover .ampstart-image-with-caption {
+      transform: translateY(-0.5vh) scale(1.05);
+    }
+
+    .gallery-related-section-items li:hover .gallery-recommended-image {
+      box-shadow: 1.5vh 7vh 6vh rgba(6, 7, 22, 0.15);
+    }
+
+    @media (max-height: 300px) {
+      .v-xs-hide {
+        display: none;
+      }
+
+      amp-img {
+        height: 1;
+        width: 2;
+      }
+    }
+
+    @media (min-height: 40.06rem) and (max-height: 52rem) {
+      .v-sm-hide {
+        display: none;
+      }
+    }
+
+    @media (min-height: 52.06rem) and (max-height: 64rem) {
+      .v-md-hide {
+        display: none;
+      }
+    }
+
+    @media (min-height: 64.06rem) {
+      .v-lg-hide {
+        display: none;
+      }
+    }
+
+    @media (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+      .gallery-base-invert {
+        color: inherit;
+        mix-blend-mode: normal;
+      }
+    }
+
+    .gallery-header {
+      height: 1.125rem;
+      width: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 1.125rem;
+      margin-right: 0;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    .gallery-header .gallery-nav {
+      display: none;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex: none;
+      flex: none;
+    }
+
+    @media (min-width: 40.06rem) and (min-height: 40.06rem) {
+      .gallery-header {
+        margin: 1.875rem;
+        margin-right: 0;
+      }
+    }
+
+    .gallery-header-rotate {
+      display: none;
+      -ms-flex: none;
+      flex: none;
+      white-space: nowrap;
+      margin: 0 0 0 1rem;
+    }
+
+    .gallery-mobile-header .gallery-header-rotate {
+      display: block;
+    }
+
+    @media (min-width: 40.06rem) {
+      .gallery-header {
+        position: fixed;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 1.125rem;
+        height: auto;
+      }
+
+      .gallery-header-rotate {
+        display: block;
+        margin: 1rem 0;
+        transform: rotate(-90deg) translateY(calc(-50% + 1.125rem / 2));
+      }
+
+      .gallery-header-rotate:before {
+        content: '';
+        display: block;
+        padding-bottom: calc(100% - 1.125rem);
+      }
+    }
+
+    @media (min-width: 40.06rem) and (min-height: 40.06rem) {
+      .gallery-header-rotate {
+        margin: 1.75rem 0;
+      }
+    }
+
+    @media (min-width: 40.06rem) and (min-height: 40.06rem) {
+      .gallery-header .gallery-nav {
+        display: -ms-flexbox;
+        display: flex;
+      }
+    }
+
+    .gallery-header-heading {
+      margin: 0;
+      font-size: 0.84375rem;
+      line-height: 1.125rem;
+    }
+
+    .gallery-header-heading a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .ampstart-sidebar {
+      width: 320px;
+      padding-top: 30px;
+      padding-left: 30px;
+      padding-right: 0;
+    }
+
+    .ampstart-sidebar-nav {
+      margin-top: 32px;
+    }
+
+    .ampstart-nav-link {
+      -ms-flex-line-pack: center;
+      align-content: center;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    .gallery-landing-title {
+      font-weight: 600;
+      line-height: 1.2;
+      width: 100%;
+      height: 100%;
+      max-width: 80vw;
+      padding: 1rem 2vw 4rem;
+      font-size: 13vw;
+      pointer-events: none;
+    }
+
+    @media (min-width: 40.06rem) {
+      .gallery-landing-title {
+        font-size: 7vw;
+        padding: 1rem 5vw;
+      }
+    }
+
+    .amp-carousel-button {
+      background-color: #fff;
+      mix-blend-mode: difference;
+      box-shadow: -10px 0 20px rgba(0, 0, 0, 0.12);
+      border-radius: 0;
+      width: 50px;
+      height: 89px;
+      cursor: pointer;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .amp-carousel-button:hover {
+      background-color: #ff0;
+    }
+
+    .amp-carousel-button:focus {
+      outline: none;
+    }
+
+    .amp-carousel-button-next {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath d='M9 3L7.94 4.06l4.19 4.19H3v1.5h9.13l-4.19 4.19L9 15l6-6z'/%3E%3C/svg%3E");
+      right: 0;
+    }
+
+    .amp-carousel-button-prev {
+      left: 0;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath d='M15 8.25H5.87l4.19-4.19L9 3 3 9l6 6 1.06-1.06-4.19-4.19H15v-1.5z'/%3E%3C/svg%3E");
+    }
+
+    @media (max-width: 40rem) {
+      .amp-carousel-button {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        transform: none;
+        width: 55px;
+        height: 55px;
+      }
+    }
+
+    .gallery-landing-wall-scroll {
+      width: 285vh;
+      height: 100vh;
+      min-width: 100vw;
+      overflow: hidden;
+    }
+
+    .gallery-landing-wall-scroll:after {
+      width: 0;
+      height: 100%;
+    }
+
+    @media (max-width: 40rem) {
+      .gallery-landing-wall-scroll {
+        margin-bottom: -3px;
+      }
+    }
+
+    @keyframes a {
+      0% {
+        transform: translateY(-2vh) rotate(1turn);
+      }
+
+      50% {
+        transform: translateY(2vh) rotate(1turn);
+      }
+
+      to {
+        transform: translateY(-2vh) rotate(1turn);
+      }
+    }
+
+    @keyframes b {
+      0% {
+        transform: translateY(-1vh) rotate(1turn);
+      }
+
+      50% {
+        transform: translateY(1vh) rotate(1turn);
+      }
+
+      to {
+        transform: translateY(-1vh) rotate(1turn);
+      }
+    }
+
+    .gallery-landing-image-wrapped {
+      width: 25vh;
+      position: absolute;
+      display: block;
+      transform: translateZ(0);
+      transform-origin: 0 0 0;
+      animation-name: a;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: both;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .amp-mode-mouse .gallery-landing-image-link {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 3;
+    }
+
+    .gallery-landing-image-wrapped:nth-child(odd) {
+      animation-name: b;
+    }
+
+    .gallery-landing-image-wrapped amp-img {
+      -o-object-fit: cover;
+      object-fit: cover;
+      box-shadow: 1vh 6vh 5vh rgba(6, 7, 22, 0.15);
+      transition: transform 0.3s;
+      pointer-events: none;
+      border-radius: 50%;
+      border-style: solid;
+      border-width: .01em;
+      border-color: rgba(0, 0, 0, 0);
+    }
+
+    .gallery-landing-image-wrap:first-child amp-img {
+      background: #000000;
+    }
+
+    .gallery-landing-image-wrap:nth-child(2) amp-img {
+      background: #000000;
+    }
+
+    .gallery-landing-image-wrap:nth-child(3) amp-img {
+      background: #000000;
+    }
+
+    .gallery-landing-image-wrap:nth-child(4) amp-img {
+      background: #000000;
+    }
+
+    .gallery-landing-image-wrap:nth-child(5) amp-img {
+      background: #000000;
+    }
+
+    .gallery-landing-image-wrap:nth-child(6) amp-img {
+      background: #000000;
+    }
+
+    .gallery-landing-image-wrap:nth-child(7) amp-img {
+      background: #000000;
+    }
+
+    .gallery-landing-image-wrap:nth-child(8) amp-img {
+      background: #000000;
+    }
+
+    .gallery-landing-image-wrap:nth-child(9) amp-img {
+      background: #000000;
+    }
+
+    .gallery-landing-image-wrap:nth-child(10) amp-img {
+      background: #000000;
+    }
+
+    .gallery-landing-image-wrap:nth-child(11) amp-img {
+      background: #000000;
+    }
+
+    .gallery-landing-image-wrap:nth-child(12) amp-img {
+      background: #000000;
+    }
+
+    .gallery-landing-image-wrap:nth-child(13) amp-img {
+      background: #000000;
+    }
+
+    .gallery-landing-image-wrap:nth-child(14) amp-img {
+      background: #000000;
+    }
+
+    .gallery-landing-image-wrap:nth-child(15) amp-img {
+      background: #000000;
+    }
+
+    .gallery-landing-image-wrap:nth-child(16) amp-img {
+      background: #000000;
+    }
+
+    .gallery-landing-image-wrap:nth-child(17) amp-img {
+      background: #000000;
+    }
+
+    .gallery-landing-image-wrap:last-child amp-img {
+      background: #000000;
+    }
+
+    .gallery-landing-image-wrapped:hover amp-img {
+      transform: translateY(-1vh) scale(1.50);
+      transition: transform 0.5s ease-in-out;
+      border: double 5px transparent;
+      border-radius: 100%;
+      background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(255, 255, 255), #0c71cf);
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+    }
+
+    .gallery-landing-image-wrap:first-child {
+      animation-delay: 0s;
+      width: 30vh;
+      top: 12vh;
+      left: 20vh;
+    }
+
+
+    .gallery-landing-image-wrap:first-child .gallery-landing-image-transform {
+
+      width: 10em;
+      height: 10em;
+
+    }
+
+    .gallery-landing-image-wrap:nth-child(2) {
+      animation-delay: -2s;
+      width: 30vh;
+      top: 12vh;
+      left: 63vh;
+    }
+
+    .gallery-landing-image-wrap:nth-child(2) .gallery-landing-image-transform {
+      width: 10em;
+      height: 10em;
+
+    }
+
+    .gallery-landing-image-wrap:nth-child(3) {
+      animation-delay: 0s;
+      width: 30vh;
+      top: 12vh;
+      left: 106vh;
+    }
+
+    .gallery-landing-image-wrap:nth-child(3) .gallery-landing-image-transform {
+      width: 10em;
+      height: 10em;
+
+    }
+
+    .gallery-landing-image-wrap:nth-child(4) {
+      animation-delay: -3s;
+      width: 30vh;
+      top: 12vh;
+      left: 149vh;
+    }
+
+    .gallery-landing-image-wrap:nth-child(4) .gallery-landing-image-transform {
+      width: 10em;
+      height: 10em;
+
+    }
+
+    .gallery-landing-image-wrap:nth-child(5) {
+      animation-delay: -2s;
+      width: 30vh;
+      top: 12vh;
+      left: 192vh;
+    }
+
+    .gallery-landing-image-wrap:nth-child(5) .gallery-landing-image-transform {
+      width: 10em;
+      height: 10em;
+
+    }
+
+    .gallery-landing-image-wrap:nth-child(6) {
+      animation-delay: -0s;
+      width: 30vh;
+      top: 12vh;
+      left: 235vh;
+    }
+
+    .gallery-landing-image-wrap:nth-child(6) .gallery-landing-image-transform {
+      width: 10em;
+      height: 10em;
+
+    }
+
+    .gallery-landing-image-wrap:nth-child(7) {
+      animation-delay: -4s;
+      width: 30vh;
+      top: 60vh;
+      left: 20vh;
+    }
+
+    .gallery-landing-image-wrap:nth-child(7) .gallery-landing-image-transform {
+      width: 10em;
+      height: 10em;
+
+    }
+
+    .gallery-landing-image-wrap:nth-child(8) {
+      animation-delay: -1s;
+      width: 30vh;
+      top: 60vh;
+      left: 63vh;
+    }
+
+    .gallery-landing-image-wrap:nth-child(8) .gallery-landing-image-transform {
+      width: 10em;
+      height: 10em;
+
+    }
+
+    .gallery-landing-image-wrap:nth-child(9) {
+      animation-delay: -2s;
+      width: 30vh;
+      top: 60vh;
+      left: 106vh;
+    }
+
+    .gallery-landing-image-wrap:nth-child(9) .gallery-landing-image-transform {
+      width: 10em;
+      height: 10em;
+
+    }
+
+    .gallery-landing-image-wrap:nth-child(10) {
+      animation-delay: -7s;
+      width: 30vh;
+      top: 60vh;
+      left: 149vh;
+    }
+
+    .gallery-landing-image-wrap:nth-child(10) .gallery-landing-image-transform {
+      width: 10em;
+      height: 10em;
+
+    }
+
+    .gallery-landing-image-wrap:nth-child(11) {
+      animation-delay: -6s;
+      width: 30vh;
+      top: 60vh;
+      left: 192vh;
+    }
+
+    .gallery-landing-image-wrap:nth-child(11) .gallery-landing-image-transform {
+      width: 10em;
+      height: 10em;
+
+    }
+
+    .gallery-landing-image-wrap:nth-child(12) {
+      animation-delay: -9s;
+      width: 30vh;
+      top: 60vh;
+      left: 235vh;
+    }
+
+    .gallery-landing-image-wrap:nth-child(12) .gallery-landing-image-transform {
+      width: 10em;
+      height: 10em;
+
+    }
+
+    .gallery-landing-image-wrap:nth-child(13) {
+      animation-delay: -8s;
+      width: 30vh;
+      top: 60vh;
+      left: 278vh;
+    }
+
+    .gallery-landing-image-wrap:nth-child(13) .gallery-landing-image-transform {
+      width: 10em;
+      height: 10em;
+
+    }
+
+    .gallery-landing-image-wrap:nth-child(14) {
+      animation-delay: -10s;
+      width: 30vh;
+      top: 60vh;
+      left: 192vh;
+    }
+
+    .gallery-landing-image-wrap:nth-child(14) .gallery-landing-image-transform {
+      width: 10em;
+      height: 10em;
+
+    }
+
+    .gallery-landing-image-wrap:nth-child(15) {
+      animation-delay: -9s;
+      width: 30vh;
+      top: 60vh;
+      left: 235vh;
+    }
+
+    .gallery-landing-image-wrap:nth-child(15) .gallery-landing-image-transform {
+      width: 10em;
+      height: 10em;
+
+    }
+
+    .gallery-landing-image-wrap:nth-child(16) {
+      animation-delay: -11s;
+      width: 30vh;
+      top: 60vh;
+      left: 259vh;
+    }
+
+    .gallery-landing-image-wrap:nth-child(16) .gallery-landing-image-transform {
+      width: 10em;
+      height: 10em;
+
+    }
+
+    .gallery-landing-image-wrap:nth-child(17) {
+      animation-delay: -10s;
+      width: 30vh;
+      top: 60vh;
+      left: 214vh;
+    }
+
+    .gallery-landing-image-wrap:nth-child(17) .gallery-landing-image-transform {
+      width: 10em;
+      height: 10em;
+
+    }
+
+    .gallery-landing-image-wrap:last-child {
+      animation-delay: -12s;
+      width: 30vh;
+      top: 60vh;
+      left: 235vh;
+    }
+
+    .gallery-landing-image-wrap:last-child .gallery-landing-image-transform {
+      width: 10em;
+      height: 10em;
+
+    }
+
+    .gallery-landing-image-wrapped .gallery-landing-image-transform {
+      transform-origin: 0 0 0;
+
+    }
+
+    .gallery-landing-image-caption {
+      position: absolute;
+      top: 1.5vh;
+      left: calc(-6% - 2.5vh);
+      z-index: 400;
+      color: #fff;
+    }
+
+    .gallery-landing-image-caption-extraleft {
+      left: calc(-12% - 40px);
+    }
+
+    .gallery-landing-image-caption-bottom {
+      top: auto;
+      bottom: 3vh;
+    }
+
+    .gallery-landing-image-caption-right {
+      left: auto;
+      right: calc(-2% - 1vh);
+    }
+
+    .gallery-landing-image-caption-content {
+      padding: 0.7em 1.2em;
+      box-shadow: 0.5rem 2rem 4rem rgba(0, 0, 0, 0.3);
+      background: red;
+      font-size: 0.8em;
+      line-height: 1.35;
+      opacity: 0;
+      transform: scale(0.8) rotateX(0deg);
+      transition: all 0.25s ease-in-out;
+    }
+
+    @media (min-height: 40.06rem) {
+      .gallery-landing-image-caption-content {
+        font-size: 1.05em;
+        line-height: 1.45;
+      }
+    }
+
+    .gallery-landing-caption-link {
+      color: #fff;
+      font-weight: 700;
+      border-bottom: 1px solid #fff;
+      text-decoration: none;
+      line-height: 1;
+      margin-top: 0.6em;
+      margin-bottom: 0.25em;
+      visibility: hidden;
+      transition: visibility 0s linear 0.25s;
+    }
+
+    .amp-mode-mouse .gallery-landing-caption-link {
+      display: none;
+    }
+
+    .gallery-landing-image-caption:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: blue;
+      transform: scaleX(0) rotateX(1turn);
+      transform-origin: top left;
+      transition: all 0.2s ease-in-out;
+      z-index: 500;
+    }
+
+    @keyframes c {
+      0% {
+        transform: scaleX(0) rotate(1turn);
+        transform-origin: top left;
+      }
+
+      48% {
+        transform: scaleX(1) rotate(1turn);
+        transform-origin: top left;
+      }
+
+      52% {
+        transform: scaleX(1) rotate(1turn);
+        transform-origin: top right;
+      }
+
+      to {
+        transform: scaleX(0) rotate(1turn);
+        transform-origin: top right;
+      }
+    }
+
+    .gallery-landing-image-wrapped:focus .gallery-landing-image-caption-content,
+    .gallery-landing-image-wrapped:hover .gallery-landing-image-caption-content {
+      opacity: 1;
+      pointer-events: auto;
+      transform: scale(1) rotateX(0deg);
+      transition: opacity 0s linear 0.25s;
+    }
+
+    .gallery-landing-image-wrapped:focus .gallery-landing-caption-link,
+    .gallery-landing-image-wrapped:hover .gallery-landing-caption-link {
+      visibility: visible;
+    }
+
+    .gallery-landing-image-wrapped:focus .gallery-landing-image-caption:after,
+    .gallery-landing-image-wrapped:hover .gallery-landing-image-caption:after {
+      animation-name: c;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-in-out;
+    }
+
+    .gallery-landing-image-wrapped:nth-child(8n-1) .gallery-landing-image-caption-content {
+      background: #e63c09;
+    }
+
+    .gallery-landing-image-wrapped:nth-child(8n-1) .gallery-landing-image-caption:after {
+      background: #f8685d;
+    }
+
+    .gallery-landing-image-wrapped:nth-child(8n-2) .gallery-landing-image-caption-content {
+      background: #b812ab;
+    }
+
+    .gallery-landing-image-wrapped:nth-child(8n-2) .gallery-landing-image-caption:after {
+      background: #df45ed;
+    }
+
+    .gallery-landing-image-wrapped:nth-child(8n-3) .gallery-landing-image-caption-content {
+      background: #eb4d68;
+    }
+
+    .gallery-landing-image-wrapped:nth-child(8n-3) .gallery-landing-image-caption:after {
+      background: #f5a8c2;
+    }
+
+    .gallery-landing-image-wrapped:nth-child(8n-4) .gallery-landing-image-caption-content {
+      background: #1b5b17;
+    }
+
+    .gallery-landing-image-wrapped:nth-child(8n-4) .gallery-landing-image-caption:after {
+      background: #49ab2b;
+    }
+
+    .gallery-landing-image-wrapped:nth-child(8n-5) .gallery-landing-image-caption-content {
+      background: #4a145b;
+    }
+
+    .gallery-landing-image-wrapped:nth-child(8n-5) .gallery-landing-image-caption:after {
+      background: #7927b0;
+    }
+
+    .gallery-landing-image-wrapped:nth-child(8n-6) .gallery-landing-image-caption-content {
+      background: #2d646e;
+    }
+
+    .gallery-landing-image-wrapped:nth-child(8n-6) .gallery-landing-image-caption:after {
+      background: #4ab5b3;
+    }
+
+    .gallery-landing-image-wrapped:nth-child(8n-7) .gallery-landing-image-caption-content {
+      background: #25b841;
+    }
+
+    .gallery-landing-image-wrapped:nth-child(8n-7) .gallery-landing-image-caption:after {
+      background: #61e064;
+    }
+
+    .gallery-landing-image-wrapped:nth-child(8n) .gallery-landing-image-caption-content {
+      background: #06345e;
+    }
+
+    .gallery-landing-image-wrapped:nth-child(8n) .gallery-landing-image-caption:after {
+      background: #0c87c0;
+    }
+
+    .gallery-sidebar {
+      padding-top: 0;
+      width: 23.4375rem;
+      padding-right: 0;
+      box-sizing: content-box;
+    }
+
+    .gallery-sidebar-close-button,
+    .gallery-sidebar a {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      text-decoration: none;
+      padding-left: 2.5rem;
+    }
+
+    .gallery-sidebar[side] {
+      background: #fff;
+      transition: transform 0.3s cubic-bezier(0, 0, 0.21, 1), box-shadow 0.3s;
+    }
+
+    .gallery-sidebar[open] {
+      box-shadow: 0 0 2rem rgba(6, 7, 22, 0.15);
+    }
+
+    @media (min-width: 40.06rem) and (min-height: 40.06rem) {
+      .gallery-sidebar-content {
+        padding: 1.875rem;
+        padding-right: 0;
+      }
+    }
+
+    .ampstart-sidebar-header {
+      font-weight: 300;
+      margin: 2rem 0 calc(1.25rem * 0.925);
+    }
+
+    .ampstart-navbar-trigger {
+      -ms-flex: none;
+      flex: none;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .ampstart-headerbar .ampstart-navbar-trigger {
+      padding: 0;
+      margin-top: 20px;
+      color: #ffffff;
+      backdrop-filter: blur(10px);
+      background-color: #000000;
+      opacity: 1;
+      border-radius: 50%;
+      border-width:1px;
+      border-color:#000000;
+      border-style: solid;
+    }
+
+
+
+    .gallery-sidebar .ampstart-navbar-trigger {
+      height: 2.35rem;
+      line-height: calc(2.35rem * 1.066666667);
+      overflow: hidden;
+      padding: 0 0.625rem;
+      margin-top: calc(2.35rem / -2 + 1.25rem / 2);
+    }
+
+    .ampstart-navbar-trigger:active,
+    .ampstart-navbar-trigger:focus,
+    .gallery-sidebar .ampstart-navbar-trigger {
+      background: #0a91a3;
+      color: #fff;
+      outline: none;
+    }
+
+    .gallery-sidebar-close-button:hover {
+      background-color: #eee;
+    }
+
+    .gallery-sidebar .ampstart-navbar-trigger:active,
+    .gallery-sidebar .ampstart-navbar-trigger:focus {
+      outline: none;
+      background-color: #ccc;
+    }
+
+    .gallery-sidebar-close-button svg {
+      display: block;
+      width: 1.125rem;
+      height: 1.125rem;
+    }
+
+    .ampstart-sidebar-nav-title {
+      position: absolute;
+      top: 2rem;
+      margin-left: 2.875rem;
+
+      color: rgb(3, 28, 97);
+      font-weight: 100;
+    }
+
+    .ampstart-sidebar-nav-title,
+    .gallery-sidebar-heading {
+      font-size: 1rem;
+      line-height: 2.25rem;
+      letter-spacing: 0.05em;
+      color: rgb(3, 28, 97);
+    }
+
+    .gallery-sidebar-heading {
+      margin: 0 0 0 1rem;
+    }
+
+    .gallery-sidebar-heading a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    @media (min-width: 40.06rem) and (min-height: 40.06rem) {
+      .gallery-sidebar-heading {
+        margin: 0 0 0 1.875rem;
+      }
+    }
+
+    .ampstart-sidebar-nav {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+
+      margin: 1rem 0;
+      background: #fff;
+    }
+
+    .ampstart-nav-link {
+      -ms-flex: none;
+      flex: none;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size: 1.375rem;
+      font-weight: 600;
+      text-transform: none;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+      text-decoration: none;
+      padding: 1.1rem 0;
+      white-space: nowrap;
+      position: relative;
+      font-size: 1rem;
+    }
+
+    .ampstart-nav-item {
+      margin-left: -2.5rem;
+    }
+
+    .ampstart-nav-link:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      transform: scaleX(0) translateZ(0);
+      transform-origin: left center;
+      transition: transform 0.24s ease-in-out;
+    }
+
+    .ampstart-nav-link:hover:after {
+      display: block;
+      content: '';
+      transform: scaleX(1) translateZ(0);
+    }
+
+    .ampstart-nav-item:nth-child(7n + 1) {
+      color: rgb(3, 28, 97);
+    }
+
+    .ampstart-nav-item:nth-child(7n + 1) .ampstart-nav-link:after {
+      background-color: rgba(3, 28, 97, 0.1);
+    }
+
+    .ampstart-nav-item:nth-child(7n + 3) {
+      color: rgb(3, 28, 97);
+    }
+
+    .ampstart-nav-item:nth-child(7n + 3) .ampstart-nav-link:after {
+      background-color: rgba(3, 28, 97, 0.1);
+    }
+
+    .ampstart-nav-item:nth-child(7n + 4) {
+      color: rgb(3, 28, 97);
+    }
+
+    .ampstart-nav-item:nth-child(7n + 4) .ampstart-nav-link:after {
+      background-color: rgba(3, 28, 97, 0.1);
+    }
+
+    .ampstart-nav-item:nth-child(7n + 5) {
+      color: rgb(3, 28, 97);
+    }
+
+    .ampstart-nav-item:nth-child(7n + 5) .ampstart-nav-link:after {
+      background-color: rgba(3, 28, 97, 0.1);
+    }
+
+    .ampstart-nav-item:nth-child(7n + 6) {
+      color: rgb(3, 28, 97);
+    }
+
+    .ampstart-nav-item:nth-child(7n + 6) .ampstart-nav-link:after {
+      background-color: rgba(3, 28, 97, 0.1);
+    }
+
+    .ampstart-nav-item:nth-child(7n + 7) {
+      color: rgb(3, 28, 97);
+    }
+
+    .ampstart-nav-item:nth-child(7n + 7) .ampstart-nav-link:after {
+      background-color: rgba(3, 28, 97, 0.1);
+    }
+
+    .ampstart-nav-item:nth-child(2) .ampstart-nav-link {
+      border-top: 1px solid #aaa;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .ampstart-nav-item:nth-child(2) .ampstart-nav-link:after {
+      background-color: #000;
+      top: -1px;
+      bottom: -1px;
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 1.5),
+    (min-resolution: 144dpi) {
+      .ampstart-nav-item:nth-child(2) .ampstart-nav-link {
+        border: none;
+        background: linear-gradient(180deg, #000, #000 50%, #fff 0) 0 0/100% 1px no-repeat,
+          linear-gradient(180deg, #000, #000 50%, #fff 0) 0 100%/100% 1px no-repeat;
+      }
+
+      .ampstart-nav-item:nth-child(2) .ampstart-nav-link:after {
+        top: 0;
+        bottom: 0;
+      }
+    }
+
+    .ampstart-nav-item .ampstart-nav-link:before {
+      width: 1.125rem;
+      margin-right: 1rem;
+      text-align: center;
+      -ms-flex-item-align: start;
+      align-self: flex-start;
+      color: #000;
+      font-size: 0.9375rem;
+      font-weight: 200;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.71875rem;
+      -ms-flex: none;
+      flex: none;
+    }
+
+    .ampstart-nav-item:nth-child(2) .ampstart-nav-link:before,
+    .ampstart-nav-item:nth-child(2) .gallery-sidebar-nav-item-icon,
+    .ampstart-nav-item:nth-child(2) .gallery-sidebar-nav-item-text {
+      color: #fce39e;
+      z-index: 100;
+      mix-blend-mode: difference;
+      -webkit-font-smoothing: antialiased;
+      font-size: 1rem;
+    }
+
+    @media (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+      .ampstart-nav-item:nth-child(2) .gallery-sidebar-nav-item-text {
+        font-size: 1rem;
+        color: rgb(3, 28, 97);
+        mix-blend-mode: normal;
+      }
+    }
+
+    .gallery-sidebar-nav-item-text {
+      -ms-flex: auto;
+      flex: auto;
+      margin-right: 1rem;
+      color: rgb(3, 28, 97);
+      font-size: 1rem;
+    }
+
+    .gallery-sidebar-nav-item-icon,
+    .gallery-sidebar-nav-item-text,
+    .gallery-sidebar-nav-item:before {
+      z-index: 1000;
+    }
+
+    @media (min-width: 40.06rem) and (min-height: 40.06rem) {
+
+      .ampstart-nav-item .ampstart-nav-link:before,
+      .gallery-sidebar-nav-item-text {
+        margin-right: 1.875rem;
+      }
+    }
+
+    .gallery-sidebar-nav-item-image {
+      -ms-flex: none;
+      flex: none;
+      width: 3.125rem;
+      height: 3.125rem;
+      border-radius: 50%;
+      box-shadow: 0 0 0 rgba(6, 7, 22, 0.2);
+    }
+
+    .gallery-sidebar-nav-item-image,
+    .gallery-sidebar-nav-item-image img {
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
+    .ampstart-nav-item:nth-child(3) .gallery-sidebar-nav-item-image {
+      background: #fe95a6;
+    }
+
+    .ampstart-nav-item:nth-child(4) .gallery-sidebar-nav-item-image {
+      background: #ffffff;
+    }
+
+    .ampstart-nav-item:nth-child(5) .gallery-sidebar-nav-item-image {
+      background: #127eb1;
+    }
+
+    .ampstart-nav-item:nth-child(6) .gallery-sidebar-nav-item-image {
+      background: #5870ed;
+    }
+
+    .ampstart-nav-item:nth-child(7) .gallery-sidebar-nav-item-image {
+      background: #774a4e;
+    }
+
+    .ampstart-nav-item:nth-child(8) .gallery-sidebar-nav-item-image {
+      background: #e4bf0b;
+    }
+
+    .gallery-sidebar-nav-item-icon {
+      -ms-flex: none;
+      flex: none;
+      width: 0.82em;
+      height: 0.82em;
+      margin-left: 0.6rem;
+      margin-right: 0.6rem;
+      color: #000;
+      margin-top: -2px;
+    }
+
+    .gallery-sidebar-nav-item-icon svg * {
+      stroke-width: 4.1px;
+    }
+
+    .gallery-component-tagline {
+      left: calc(1rem + 36px + 0.65rem);
+      pointer-events: none;
+      position: absolute;
+      top: 20px;
+      z-index: 9;
+      color: #ffffff;
+      mix-blend-mode: difference;
+    }
+
+    .gallery-component-tagline>div {
+      font-size: 0.84375rem;
+      line-height: 36px;
+    }
+  </style>
 </head>
 
-
 <body>
-    <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
-    </amp-auto-ads>
+  <!-- Start Navbar -->
+  <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
+    <div role="button" aria-label="open sidebar" on="tap:sidebar.toggle" tabindex="0"
+      class="ampstart-navbar-trigger pr2">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36">
+        <path fill="currentColor" d="M9 12h18v1H9z"></path>
+        <path fill="currentColor" d="M9 17h18v1H9z"></path>
+        <path fill="currentColor" d="M9 22h18v1H9z"></path>
+      </svg>
+    </div>
+  </header>
 
-    <!-- Google Tag Manager -->
-    <amp-analytics type="gtag" data-credentials="include">
-        <script type="application/json">
-    {
-      "vars" : {
-        "gtag_id": "G-L3SKF0FS1W",
-        "config" : {
-          "G-L3SKF0FS1W": { "groups": "default" }
-        }
-      },
-            "triggers": {
-        "button": {
-          "selector": "#the-button",
-          "on": "click",
-          "vars": {
-            "event_name": "login",
-            "method": "Google"
-                }   
-            }
-    }   
-}
-    </script>
-    </amp-analytics>
-    <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-KLB4G4VC&gtm.url=SOURCE_URL"
-        data-credentials="include"></amp-analytics>
-    <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
-    </amp-auto-ads>
-    <header class="headerbar">
-        <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
-        <div class="site-name">MORE PAGES</div>
-        <h1 amp-fx="fly-in-left" data-duration="200ms">muzzicc</h1>
-    </header>
+  <!-- Start Sidebar -->
+  <amp-sidebar id="sidebar" class="ampstart-sidebar px3 gallery-sidebar" layout="nodisplay">
+    <div class="flex justify-start items-center ampstart-sidebar-header">
+      <div role="button" aria-label="close sidebar" on="tap:sidebar.toggle" tabindex="0"
+        class="ampstart-navbar-trigger items-start">
+        ✕
+      </div>
+    </div>
+    <nav class="ampstart-sidebar-nav ampstart-nav">
+      <ul class="list-reset m0 p0 ampstart-label">
+        <li role="heading" class="ampstart-sidebar-nav-title">
+          Contact Me
+        </li>
+        <li class="ampstart-nav-item gallery-sidebar-nav-item">
+          <a class="ampstart-nav-link" href="https://bcebel.github.io/BrianPortfolio/#about" target="_blank" aria-label="View">
+            <div class="gallery-sidebar-nav-item-text">About Me</div>
+            <div class="gallery-sidebar-nav-item-icon">
 
-    <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
-        <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕
+            </div>
+          </a>
+        </li>
+
+        <li class="ampstart-nav-item gallery-sidebar-nav-item">
+          <a class="ampstart-nav-link"
+            href="https://docs.google.com/document/d/e/2PACX-1vTLzQhSeA_GKWep1Fi8HRbehKnhDxhH8bXggLdPd41trOx6fdlPlkgtpKmh6PJRXWqdyhjBDUpNUDD2/pub"
+            target="_blank" aria-label="View">
+            <div class="gallery-sidebar-nav-item-text">
+              Resume
+            </div>
+
+            <div class="gallery-sidebar-nav-item-icon">
+            </div>
+          </a>
+        </li>
+
+        <li class="ampstart-nav-item gallery-sidebar-nav-item">
+          <a class="ampstart-nav-link" href="https://github.com/bcebel" target="_blank" aria-label="View">
+            <div class="gallery-sidebar-nav-item-text">
+              GitHub
+            </div>
+
+            <div class="gallery-sidebar-nav-item-icon">
+            </div>
+          </a>
+        </li>
+        <li class="ampstart-nav-item gallery-sidebar-nav-item">
+          <a class="ampstart-nav-link" href="https://www.linkedin.com/in/brian-ebel/" target="_blank" aria-label="View">
+            <div class="gallery-sidebar-nav-item-text">
+              LinkedIn
+            </div>
+            <div class="gallery-sidebar-nav-item-icon">
+
+            </div>
+          </a>
+        </li>
+        <li class="ampstart-nav-item gallery-sidebar-nav-item">
+          <a class="ampstart-nav-link" href="https://twitter.com/bc3mc2" target="_blank" aria-label="Twitter">
+            <div class="gallery-sidebar-nav-item-text">
+              X
+            </div>
+            <div class="gallery-sidebar-nav-item-icon">
+
+            </div>
+          </a>
+        </li>
+
+        <li class="ampstart-nav-item gallery-sidebar-nav-item">
+
+          <a class="ampstart-nav-link" href="mailto: bcebel@gmail.com" aria-label="email">bcebel@gmail.com </a>
+
+
+          <div class="gallery-sidebar-nav-item-icon">
+
+          </div>
+          </a>
+        </li>
+        <li class="ampstart-nav-item gallery-sidebar-nav-item">
+
+          <a class="ampstart-nav-link" href="tel:405-650-0063" aria-label="Phone Number">405-650-0063</a>
+
+
+          <div class="gallery-sidebar-nav-item-icon">
+
+          </div>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+  </amp-sidebar>
+  <!-- End Sidebar -->
+  <!-- End Navbar -->
+
+  <div class="gallery-component-tagline xs-hide">
+    <div><- CONTACT INFO &nbsp;</div>
+    </div>
+    <main id="content" class="gallery-base-content fit" role="main">
+      <h1
+        class="gallery-landing-title flex justify-center items-center center absolute top-0 left-0 right-0 z1 mx-auto gallery-base-invert">
+        Brian Ebel Portfolio
+      </h1>
+
+      <amp-carousel width="100vw" height="100vh" controls="" class="gallery-landing-wall block relative">
+        <div class="gallery-landing-wall-scroll relative">
+          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+            <a href="https://bcebel.github.io/Hot10/" target="_blank" class="gallery-landing-image-link" aria-label="View"></a>
+            <figcaption
+              class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-extraleft gallery-landing-image-caption-content">
+              <h2 class="h4 regular">Hot 10!</h2>
+              <h3 class="h4 regular" role="link">Youtube API</h3>
+              <a href="https://bcebel.github.io/Hot10/" target="_blank" 
+                class="gallery-landing-caption-link inline-block">View</a>
+            </figcaption>
+            <div class="gallery-landing-image-transform">
+              <amp-img width="12" height="12" layout="responsive" src="./img/gallery/hot10.webp" srcset="
+          ./img/gallery/hot10.webp 1x,
+          ./img/gallery/hot10@2x.webp 2x
+        " alt="guitar on fire"></amp-img>
+            </div>
+          </figure>
+          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+            <a href="https://bcebel.github.io/met/" target="_blank" class="gallery-landing-image-link" aria-label="View"></a>
+            <figcaption
+              class="gallery-landing-image-caption gallery-landing-image-caption-left gallery-landing-image-caption-bottom gallery-landing-image-caption-content">
+              <h2 class="h4 regular">Weather App</h2>
+              <h3 class="h4 regular" role="link">&nbsp; &nbsp; &nbsp &nbsp API</h3>
+              <a href="https://bcebel.github.io/met/" target="_blank" aria-label="View"
+                class="gallery-landing-caption-link inline-block">View</a>
+            </figcaption>
+            <div class="gallery-landing-image-transform">
+              <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/forecast.webp" srcset="
+          ./img/gallery/forecast.webp 1x,
+          ./img/gallery/forecast@2x.webp 2x
+        " alt="person in the rain with umbrella"></amp-img>
+            </div>
+          </figure>
+          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+            <a href="https://brianecommerce-4ffe41bea6fa.herokuapp.com/" target="_blank" aria-label="View"
+              class="gallery-landing-image-link"></a>
+            <figcaption class="gallery-landing-image-caption gallery-landing-image-caption-content">
+              <h2 class="h4 regular">Sketchy Business</h2>
+              <h3 class="h4 regular" role="link">GraphQL </h3>
+              <a href="https://brianecommerce-4ffe41bea6fa.herokuapp.com/" target="_blank" aria-label="View"
+                class="gallery-landing-caption-link inline-block">View</a>
+            </figcaption>
+            <div class="gallery-landing-image-transform">
+              <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/sketchy.webp" srcset="
+          ./img/gallery/sketchy.webp 1x,
+          ./img/gallery/sketchy@2x.webp 2x
+        " alt="artist palette"></amp-img>
+            </div>
+          </figure>
+          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+            <a href="https://bcebel.github.io/biochar/" target="_blank" class="gallery-landing-image-link" aria-label="View"></a>
+            <figcaption
+              class="gallery-landing-image-caption gallery-landing-image-caption-bottom gallery-landing-image-caption-left gallery-landing-image-caption-content">
+              <h2 class="h4 regular">Biochar &nbsp &nbsp </h2>
+              <h3 class="h4 regular" role="link">React</h3>
+              <a href="https://bcebel.github.io/biochar/" target="_blank" aria-label="View"
+                class="gallery-landing-caption-link inline-block">View</a>
+            </figcaption>
+            <div class="gallery-landing-image-transform">
+              <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/fire.webp" srcset="
+          ./img/gallery/fire.webp 1x,
+          ./img/gallery/fire@2x.webp 2x
+        " alt="artist rendering of biochar with blue flame"></amp-img>
+            </div>
+          </figure>
+          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+            <a href="https://bcebel.github.io/BrianPortfolio/" target="_blank" aria-label="View" class="gallery-landing-image-link"></a>
+            <figcaption
+              class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-content">
+              <h2 class="h4 regular">Portfolio</h2>
+              <h3 class="h4 regular" role="link">CSS</h3>
+              <a href="https://bcebel.github.io/BrianPortfolio/" target="_blank" aria-label="View" 
+                class="gallery-landing-caption-link inline-block">View</a>
+            </figcaption>
+            <div class="gallery-landing-image-transform">
+              <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/mountain.webp" srcset="
+          ./img/gallery/mountain.webp 1x,
+          ./img/gallery/mountain@2x.webp 2x
+        " alt="mountaintops with snow"></amp-img>
+            </div>
+          </figure>
+          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+            <a href="https://brython-e2a8d95106d7.herokuapp.com/" target="_blank" aria-label="View" 
+              class="gallery-landing-image-link"></a>
+            <figcaption class="gallery-landing-image-caption gallery-landing-image-caption-content
+                      gallery-landing-image-caption-top">
+              <h2 class="h4 regular">Just Tech News</h2>
+              <h3 class="h4 regular" role="link">Python</h3>
+              <a href="https://brython-e2a8d95106d7.herokuapp.com/" target="_blank" aria-label="View" 
+                class="gallery-landing-caption-link inline-block">View</a>
+            </figcaption>
+            <div class="gallery-landing-image-transform">
+              <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/pythonblog.webp"
+                srcset="
+                  ./img/gallery/pythonblog.webp 1x,
+                  ./img/gallery/pythonblog@2x.webp 2x
+                " alt="black & white python"></amp-img>
+            </div>
+          </figure>
+          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+            <a href="https://bcebel.github.io/energymap/" target="_blank" class="gallery-landing-image-link" aria-label="View"></a>
+            <figcaption
+              class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-extraleft gallery-landing-image-caption-content">
+              <h2 class="h4 regular">Energy Map</h2>
+              <h3 class="h4 regular" role="link">ArcGIS</h3>
+              <a href="https://bcebel.github.io/energymap/" target="_blank" aria-label="View"
+                class="gallery-landing-caption-link inline-block">View</a>
+            </figcaption>
+            <div class="gallery-landing-image-transform">
+              <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/energymap.webp"
+                srcset="
+          ./img/gallery/energymap.webp 1x,
+          ./img/gallery/energymap@2x.webp 2x
+        " alt="map of energy production around the world"></amp-img>
+            </div>
+          </figure>
+          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+            <a href="https://nextjs-blog-beige-phi-95.vercel.app/" target="_blank" aria-label="View"
+              class="gallery-landing-image-link"></a>
+            <figcaption
+              class="gallery-landing-image-caption gallery-landing-image-caption-left gallery-landing-image-caption-bottom gallery-landing-image-caption-content">
+              <h2 class="h4 regular">Portfolio</h2>
+              <h3 class="h4 regular" role="link">Next JS</h3>
+              <a href="https://nextjs-blog-beige-phi-95.vercel.app/" target="_blank" aria-label="View"
+                class="gallery-landing-caption-link inline-block">View</a>
+            </figcaption>
+            <div class="gallery-landing-image-transform">
+              <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/brian.webp" srcset="
+          ./img/gallery/brian.webp 1x,
+          ./img/gallery/brian@2x.webp 2x
+        " alt="Brian Ebel"></amp-img>
+            </div>
+          </figure>
+          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+            <a href="https://sleepy-caverns-33323.herokuapp.com/" target="_blank" aria-label="View"
+              class="gallery-landing-image-link"></a>
+            <figcaption class="gallery-landing-image-caption gallery-landing-image-caption-content
+              gallery-landing-image-caption-bottom">
+              <h2 class="h4 regular">Tech Blog</h2>
+              <h3 class="h4 regular" role="link">SQL</h3>
+              <a href="https://sleepy-caverns-33323.herokuapp.com/" target="_blank" aria-label="View"
+                class="gallery-landing-caption-link inline-block">View</a>
+            </figcaption>
+            <div class="gallery-landing-image-transform">
+              <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/techblog.webp" srcset="
+          ./img/gallery/techblog.webp 1x,
+          ./img/gallery/techblog@2x.webp 2x
+        " alt="<< tech"></amp-img>
+            </div>
+          </figure>
+          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+            <a href="https://map-beta-gray.vercel.app/" target="_blank" class="gallery-landing-image-link" aria-label="View"></a>
+            <figcaption class="gallery-landing-image-caption gallery-landing-image-caption-content
+                              gallery-landing-image-caption-bottom">
+              <h2 class="h4 regular">Map</h2>
+              <h3 class="h4 regular" role="link">ArcGIS</h3>
+              <a href="https://map-beta-gray.vercel.app/" target="_blank" aria-label="View"
+                class="gallery-landing-caption-link inline-block">View</a>
+            </figcaption>
+            <div class="gallery-landing-image-transform">
+              <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/map.webp" srcset="
+                          ./img/gallery/map.webp 1x,
+                          ./img/gallery/map@2x.webp 2x
+                        " alt="colorful map of Texas"></amp-img>
+            </div>
+          </figure>
+          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+            <a href="https://phudireservations.herokuapp.com/" target="_blank"  aria-label="View"class="gallery-landing-image-link"></a>
+            <figcaption
+              class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-content">
+              <h2 class="h4 regular">PHÜDI</h2>
+              <h3 class="h4 regular" role="link">SQL</h3>
+              <a href="https://phudireservations.herokuapp.com/" target="_blank" aria-label="View"
+                class="gallery-landing-caption-link inline-block">View</a>
+            </figcaption>
+            <div class="gallery-landing-image-transform">
+              <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/phudi.webp" srcset="
+                              ./img/gallery/phudi.webp 1x,
+                              ./img/gallery/phudi@2x.webp 2x
+                            " alt="dining room with clock"></amp-img>
+            </div>
+          </figure>
+
+          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+            <a href="https://stormy-springs-91791.herokuapp.com/" target="_blank" aria-label="View" 
+              class="gallery-landing-image-link"></a>
+            <figcaption
+              class="gallery-landing-image-caption gallery-landing-image-caption-left gallery-landing-image-caption-bottom gallery-landing-image-caption-content">
+
+              <h2 class="h4 regular">Text Editor</h2>
+              <h3 class="h4 regular" role="link">PWA</h3>
+              <a href="https://stormy-springs-91791.herokuapp.com/" target="_blank" aria-label="View"
+                class="gallery-landing-caption-link inline-block">View</a>
+            </figcaption>
+            <div class="gallery-landing-image-transform">
+              <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/jate.webp" srcset="
+                    ./img/gallery/jate.webp 1x,
+                    ./img/gallery/jate@2x.webp 2x
+                  " alt="Just Another Text Editor text"></amp-img>
+            </div>
+          </figure>
+
+
         </div>
-        <ul class="sidebar">
-            <li><a href="https://bcebel.github.io">Home</a></li>
+      </amp-carousel>
 
-            <li><a href="/revolver.html">Beatles Revolver</a></li>
-
-            <li><a href="/pearljam.html">Pearl Jam</a></li>
-            <li><a href="/rhcp.html">Red Hot Chili Peppers</a></li>
-            <li><a href="/pearljam.html">Pearl Jam</a></li>
-            <li><a href="/steviewonder.html">Stevie Wonder</a></li>
-            <li><a href="https://bcebel.github.io/Hot10">Hot10!</a></li>
-        </ul>
-    </amp-sidebar>
-
-    <h1 amp-fx="fly-in-right" data-duration="2000ms">amplifying punk passion: music, rebellion, culture</h1>
-
-
-    <div amp-fx="fade-in" data-duration="2000ms">
-        <h2>Rocking Through Time: A Journey Across Genres and Eras</h2>
-    </div>
-    <p>
-        muzzicc serves as a sanctuary for music enthusiasts, a digital repository of in-depth articles that delve into
-        the
-        pivotal albums and bands that have not only defined musical epochs but also influenced cultural narratives and
-        social
-        landscapes.</p>
-
-    <div amp-fx="fly-in-right" data-fly-in-distance="100%">
-        <h2>Classic Rock Chronicles</h2>
-
-        <a href="https://commons.wikimedia.org/wiki/File:Rock_Band_Stratocaster.jpg?uselang=en#Licensing"
-            title="Public Domain"></a><a
-            href="https://commons.wikimedia.org/wiki/File:Rock_Band_Stratocaster.jpg"><amp-img class="phot"
-                alt="Rock Band Toy Guitar" src="./images/Rock_Band_Stratocaster.jpg" width="1600" height="572"
-                layout="responsive">
-            </amp-img></a>
-        <p>
-            The era of classic rock ushered in an explosion of creativity, producing anthems that would become timeless
-            classics.
-            Led Zeppelin's thunderous beats, Pink Floyd's ethereal tapestries, and the seismic shifts of The Who – these
-            were the
-            voices of a generation. Together, we'll dissect the masterpieces that not only defined an era but also
-            transcended it,
-            leaving an indelible legacy in the annals of rock history.</p>
-    </div>
-    <h2>Pop Pioneers: Chart-Toppers and Iconic Voices</h2>
-
-    <div amp-fx="fly-in-right" data-fly-in-distance="100%">
-        <a href="https://creativecommons.org/licenses/by-sa/4.0"
-            title="Creative Commons Attribution-Share Alike 4.0"></a><a
-            href="https://commons.wikimedia.org/w/index.php?curid=120132132"><amp-img class="phot"
-                alt="Wembley Stadium filled with fans" src="./images/ccwembley.jpg" width="1599" height="900"
-                layout="responsive">
-            </amp-img></a>
-
-        <p>We'll explore the albums and careers of these pop pioneers, dissecting their musical evolution and
-            examining the cultural impact of their work. From the dance floors pulsating to Madonna's beats to the
-            empowering
-            anthems resonating in Beyoncé's stadium tours, and the heartfelt lyrics that have become synonymous with
-            Taylor Swift,
-            we'll unravel the stories behind the hits.</p>
-    </div>
-    <div amp-fx="fly-in-right" data-fly-in-distance="100%">
-        <h2>Techno Tracks and Electronic Beats</h2>
-        <a href="https://creativecommons.org/licenses/by/2.0/" title="CC BY 2.0 DEED
-Attribution 2.0 Generic"></a><a
-            href="https://commons.wikimedia.org/wiki/File:Your_disco_needs_you.jpg#/media/File:Your_disco_needs_you.jpg"><amp-img
-                class="phot" alt="Building with DISCO in huge letters" src="./images/your_disco_needs_you.jpg"
-                width="1236" height="849" layout="responsive">
-            </amp-img></a>
-        <p>As we delve into the electronic realm, we'll ride the waves of techno, a genre that emerged from the pulsing
-            heart of
-            urban nightlife. From the underground clubs of Detroit to the global dancefloors of Berlin, we'll witness
-            how techno's
-            hypnotic rhythms and immersive soundscapes have become a cultural force, reshaping not only music but also
-            the way we
-            experience it.</p>
-    </div>
-    <div amp-fx="fly-in-right" data-fly-in-distance="100%">
-        <h2>Jazz Journeys: Miles Davis and Beyond</h2>
-        <a href="https://commons.wikimedia.org/wiki/Category:CC-BY-SA-4.0"
-            title="Creative Commons Attribution ShareAlike 4.0 International License"></a><a
-            href="https://commons.wikimedia.org/wiki/File:Portal_Jazz.jpg"><amp-img class="phot" alt="Jazz Banner"
-                src="./images/Portal_Jazz.jpg" width="1130" height="279" layout="responsive">
-            </amp-img></a>
-        <p>Jazz, with its improvisational spirit and complex harmonies, has shaped the musical landscape in profound
-            ways. We'll
-            journey through the syncopated rhythms of Miles Davis, the avant-garde explorations of John Coltrane.
-            Together, we'll uncover how jazz has been a crucible of innovation, influencing genres far
-            beyond its borders.</p>
-    </div>
-
-    <div amp-fx="fly-in-right" data-fly-in-distance="100%">
-        <h2>Grunge and Alternative Rock From Seattle's Streets to Global Stages</h2>
-        <amp-img class="phot" alt="Lollapalooza fans cheering towards stage" src="./images/ccamps.jpg" width="1024"
-            height="684" layout="responsive">
-        </amp-img>
-        <p>Grunge,
-            born in the rainy streets of Seattle, embraced a raw and introspective sound that resonated with a
-            generation grappling
-            with disillusionment. Bands like Nirvana, Pearl Jam, and Soundgarden became the voices of a disenchanted
-            youth, wielding
-            their guitars as weapons against societal norms. Alt rock had been bubbling up from college music and grunge
-            sealed the deal.</p>
-    </div>
-    <div amp-fx="fly-in-right" data-fly-in-distance="100%">
-        <h2>Conclusion: A Harmonic Tapestry</h2>
-        <a href="https://creativecommons.org/licenses/by-sa/2.0/" title="CC BY-SA 2.0 DEED"></a><a
-            href="https://commons.wikimedia.org/wiki/File:Lollapalooza_2015.JPG"><amp-img class="phot" alt="Prism"
-                src="./images/Lollapalooza_2015.JPG" width="1599" height="950" layout="responsive">
-            </amp-img></a>
-        <p>As we navigate this musical odyssey, we'll uncover the threads that unite these seemingly disparate genres.
-            Each album,
-            each band, serves as a testament to the boundless creativity and diversity of human expression. Together,
-            they form a
-            living symphony, a testament to the universal language that is music.</p>
-
-        <p>So, join us as we embark on this sonic voyage, where every chord, every lyric, and every beat is a testament
-            to the
-            inexhaustible spirit of human creativity. Together, let's dive deep into the albums and bands that have not
-            only shaped
-            our musical world but have also left an indelible mark on the very essence of our lives. Welcome to a
-            journey that
-            transcends genres and eras, a journey through the heart and soul of music itself.</p>
-    </div>
-    https://policies.google.com/technologies/partner-sites
-    <amp-bodymovin-animation layout="responsive" width="500" height="400"
-        src="https://lottie.host/21ae9c70-bc2e-45b8-84c0-1102fee7d163/oQfnTZlsdZ.json">
-    </amp-bodymovin-animation>
+    </main>
 </body>
 
 </html>

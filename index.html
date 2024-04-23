@@ -3138,24 +3138,24 @@ limitations under the License.
 
 <body>
 
-  <amp-analytics type="gtag" data-credentials="include">
-    <script type="application/json">
-  {
-    "vars" : {
-      "gtag_id": "GT-K8KNQ53",
-      "config" : {
-        "GT-K8KNQ53": { "groups": "default" }
+<amp-analytics type="gtag" data-credentials="include">
+  <script type="application/json">
+{
+  "vars": {
+    "gtag_id": "GT-K8KNQ53",
+    "linker": {
+      "domains": ["example.com", "example2.com"]
+    }
+    ,
+    "config": {
+      "GT-K8KNQ53": {
+        "groups": "default"
       }
-    },
-    "triggers":{
-    "iniLoad":{
-      "on":"ini-load",
-      "request": "request",
-     }
+    }
   }
 }
-  </script>
-  </amp-analytics>
+</script>
+</amp-analytics>
 
   <!-- Start Navbar -->
   <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">

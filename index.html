@@ -1472,8 +1472,8 @@ limitations under the License.
     }
 
     body {
-      background: #fff;
-      color: #4a4a4a;
+      background: #000000;
+      color: #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial,
         sans-serif;
@@ -1686,7 +1686,7 @@ limitations under the License.
 
     body {
   
-      color: #000;
+      color: #ffffff;
       font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI,
         Roboto, sans-serif;
           font-weight: 100;
@@ -2116,6 +2116,9 @@ limitations under the License.
 
     .ampstart-sidebar-nav {
       margin-top: 32px;
+    }
+.ampstart-nav-link:hover {
+      color: #4ab5b3;
     }
 
     .ampstart-nav-link {
@@ -2803,7 +2806,7 @@ font-style: normal;
       -ms-flex: none;
       flex: none;
       cursor: pointer;
-      line-height: 1;
+
     }
 
     .ampstart-headerbar .ampstart-navbar-trigger {
@@ -2811,7 +2814,7 @@ font-style: normal;
       margin-top: 20px;
       color: #ffffff;
       backdrop-filter: blur(10px);
-      background-color: #000000;
+      background-color: transparent;
       opacity: 1;
       border-radius: 50%;
       border-width: 1px;
@@ -2832,7 +2835,6 @@ font-style: normal;
     .ampstart-navbar-trigger:active,
     .ampstart-navbar-trigger:focus,
     .gallery-sidebar .ampstart-navbar-trigger {
-      background: #0a91a3;
       color: #fff;
       outline: none;
     }
@@ -3025,7 +3027,9 @@ font-style: normal;
       -ms-flex: none;
       flex: none;
     }
-
+ .ampstart-nav-item:nth-child(2) .gallery-sidebar-nav-item-text:hover{
+      color: #4ab5b3;
+ }
     .ampstart-nav-item:nth-child(2) .ampstart-nav-link:before,
     .ampstart-nav-item:nth-child(2) .gallery-sidebar-nav-item-icon,
     .ampstart-nav-item:nth-child(2) .gallery-sidebar-nav-item-text {
@@ -3059,6 +3063,9 @@ font-style: normal;
       z-index: 1000;
     }
 
+    .gallery-sidebar-nav-item-text:hover {
+      color:#4ab5b3;
+    }
     @media (min-width: 40.06rem) and (min-height: 40.06rem) {
 
       .ampstart-nav-item .ampstart-nav-link:before,
@@ -3172,14 +3179,19 @@ font-style: normal;
 
   <!-- Start Navbar -->
   <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
+    
     <div role="button" aria-label="open sidebar" on="tap:sidebar.toggle" tabindex="0"
       class="ampstart-navbar-trigger pr2">
+          
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36">
         <path fill="currentColor" d="M9 12h18v1H9z"></path>
         <path fill="currentColor" d="M9 17h18v1H9z"></path>
         <path fill="currentColor" d="M9 22h18v1H9z"></path>
+ 
       </svg>
+
     </div>
+            more info
   </header>
 
   <!-- Start Sidebar -->
@@ -3276,9 +3288,7 @@ font-style: normal;
   <!-- End Sidebar -->
   <!-- End Navbar -->
 
-  <div class="gallery-component-tagline xs-hide">
-    <div><- MORE INFO &nbsp;</div>
-    </div>
+
     
     <main id="content" class="gallery-base-content fit" role="main">
           <h1

@@ -2266,7 +2266,7 @@ font-style: normal;
       box-shadow: 1vh 6vh 5vh rgba(6, 7, 22, 0.15);
       transition: transform 0.3s;
       pointer-events: none;
-      border-radius: 50%;
+      border-radius: 1%;
       border-style: solid;
       border-width: .01em;
       border-color: rgba(0, 0, 0, 0);
@@ -2348,8 +2348,7 @@ font-style: normal;
       transform: translateY(-1vh) scale(1.75);
       transition: transform 0.5s ease-in-out;
       border: double 5px transparent;
-      border-radius: 100%;
-      background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(255, 255, 255), #0c71cf);
+      background-image: linear-gradient(white, rgb(0, 0, 0)), radial-gradient(circle at top left, rgb(255, 0, 0), #0c71cf);
       background-origin: border-box;
       background-clip: padding-box, border-box;
     }
@@ -2780,7 +2779,7 @@ font-style: normal;
     }
 
     .gallery-sidebar[side] {
-      background: #fff;
+      background: transparent;
       transition: transform 0.3s cubic-bezier(0, 0, 0.21, 1), box-shadow 0.3s;
     }
 
@@ -2859,7 +2858,7 @@ font-style: normal;
       top: 2rem;
       margin-left: 2.875rem;
 
-      color: rgb(3, 28, 97);
+      color: rgb(255, 255, 255);
       font-weight: 100;
     }
 
@@ -2868,7 +2867,8 @@ font-style: normal;
       font-size: 1rem;
       line-height: 2.25rem;
       letter-spacing: 0.05em;
-      color: rgb(3, 28, 97);
+        color: rgb(255, 255, 255);
+
     }
 
     .gallery-sidebar-heading {
@@ -2893,7 +2893,7 @@ font-style: normal;
       flex-direction: column;
 
       margin: 1rem 0;
-      background: #fff;
+      background: #000000;
     }
 
     .ampstart-nav-link {
@@ -2939,7 +2939,7 @@ font-style: normal;
     }
 
     .ampstart-nav-item:nth-child(7n + 1) {
-      color: rgb(3, 28, 97);
+      color: rgb(255, 255, 255);
     }
 
     .ampstart-nav-item:nth-child(7n + 1) .ampstart-nav-link:after {
@@ -2947,7 +2947,7 @@ font-style: normal;
     }
 
     .ampstart-nav-item:nth-child(7n + 3) {
-      color: rgb(3, 28, 97);
+      color: rgb(255, 255, 255);
     }
 
     .ampstart-nav-item:nth-child(7n + 3) .ampstart-nav-link:after {
@@ -2955,7 +2955,7 @@ font-style: normal;
     }
 
     .ampstart-nav-item:nth-child(7n + 4) {
-      color: rgb(3, 28, 97);
+      color: rgb(255, 255, 255);
     }
 
     .ampstart-nav-item:nth-child(7n + 4) .ampstart-nav-link:after {
@@ -2963,7 +2963,7 @@ font-style: normal;
     }
 
     .ampstart-nav-item:nth-child(7n + 5) {
-      color: rgb(3, 28, 97);
+      color: rgb(255, 255, 255);
     }
 
     .ampstart-nav-item:nth-child(7n + 5) .ampstart-nav-link:after {
@@ -2971,7 +2971,7 @@ font-style: normal;
     }
 
     .ampstart-nav-item:nth-child(7n + 6) {
-      color: rgb(3, 28, 97);
+      color: rgb(255, 255, 255);
     }
 
     .ampstart-nav-item:nth-child(7n + 6) .ampstart-nav-link:after {
@@ -2979,7 +2979,7 @@ font-style: normal;
     }
 
     .ampstart-nav-item:nth-child(7n + 7) {
-      color: rgb(3, 28, 97);
+      color: rgb(255, 255, 255);
     }
 
     .ampstart-nav-item:nth-child(7n + 7) .ampstart-nav-link:after {
@@ -3017,7 +3017,7 @@ font-style: normal;
       text-align: center;
       -ms-flex-item-align: start;
       align-self: flex-start;
-      color: #000;
+      color: #ffffff;
       font-size: 0.9375rem;
       font-weight: 200;
       -webkit-font-smoothing: antialiased;
@@ -3029,7 +3029,7 @@ font-style: normal;
     .ampstart-nav-item:nth-child(2) .ampstart-nav-link:before,
     .ampstart-nav-item:nth-child(2) .gallery-sidebar-nav-item-icon,
     .ampstart-nav-item:nth-child(2) .gallery-sidebar-nav-item-text {
-      color: #fce39e;
+      color: #ffffff;
       z-index: 100;
       mix-blend-mode: difference;
       -webkit-font-smoothing: antialiased;
@@ -3040,7 +3040,7 @@ font-style: normal;
     (-ms-high-contrast: none) {
       .ampstart-nav-item:nth-child(2) .gallery-sidebar-nav-item-text {
         font-size: 1rem;
-        color: rgb(3, 28, 97);
+        color: rgb(255, 255, 255);
         mix-blend-mode: normal;
       }
     }
@@ -3049,7 +3049,7 @@ font-style: normal;
       -ms-flex: auto;
       flex: auto;
       margin-right: 1rem;
-      color: rgb(3, 28, 97);
+        color: rgb(255, 255, 255);
       font-size: 1rem;
     }
 
@@ -3193,7 +3193,7 @@ font-style: normal;
     <nav class="ampstart-sidebar-nav ampstart-nav">
       <ul class="list-reset m0 p0 ampstart-label">
         <li role="heading" class="ampstart-sidebar-nav-title">
-          Contact Me
+
         </li>
         <li class="ampstart-nav-item gallery-sidebar-nav-item">
           <a class="ampstart-nav-link" href="https://bcebel.github.io/BrianPortfolio/#about" target="_blank"
@@ -3277,7 +3277,7 @@ font-style: normal;
   <!-- End Navbar -->
 
   <div class="gallery-component-tagline xs-hide">
-    <div><- CONTACT INFO &nbsp;</div>
+    <div><- MORE INFO &nbsp;</div>
     </div>
     
     <main id="content" class="gallery-base-content fit" role="main">

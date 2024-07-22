@@ -2810,15 +2810,21 @@ font-style: normal;
     }
 
     .ampstart-headerbar .ampstart-navbar-trigger {
+      isolation: isolate;
       padding: 0;
+      color:#ffffff;
       margin-top: 20px;
-      color: #ffffff;
+      mix-blend-mode:difference;
       backdrop-filter: blur(10px);
       background-color: transparent;
-      opacity: 1;
+
+
+      
     }
 
-
+.moreinfo{
+  mix-blend-mode: difference;
+}
 
     .gallery-sidebar .ampstart-navbar-trigger {
       height: 2.35rem;
@@ -3187,7 +3193,7 @@ font-style: normal;
       </svg>
 
     </div>
-            more info
+            <div class="moreinfo">more info</div> 
   </header>
 
   <!-- Start Sidebar -->
@@ -3301,6 +3307,7 @@ font-style: normal;
             <figcaption
               class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-extraleft gallery-landing-image-caption-content">
               <h2 class="h4 regular">Hot 10!</h2>
+                            <h2 class="h4 regular">JavaScript</h2>
               <h3 class="h4 regular" role="link">Youtube API</h3>
               <a href="https://bcebel.github.io/Hot10/" target="_blank"
                 class="gallery-landing-caption-link inline-block">View</a>
@@ -3319,7 +3326,9 @@ font-style: normal;
             <figcaption
               class="gallery-landing-image-caption gallery-landing-image-caption-left gallery-landing-image-caption-bottom gallery-landing-image-caption-content">
               <h2 class="h4 regular">Weather App</h2>
-              <h3 class="h4 regular" role="link">&nbsp; &nbsp; &nbsp &nbsp API</h3>
+                            <h2 class="h4 regular">Vanilla Javascript</h2>
+                            <h2 class="h4 regular">Dom Manipulation</h2>
+              <h3 class="h4 regular" role="link">OpenWeather API</h3>
               <a href="https://bcebel.github.io/met/" target="_blank" aria-label="View"
                 class="gallery-landing-caption-link inline-block">View</a>
             </figcaption>
@@ -3335,7 +3344,8 @@ font-style: normal;
               class="gallery-landing-image-link"></a>
             <figcaption class="gallery-landing-image-caption gallery-landing-image-caption-content">
               <h2 class="h4 regular">Sketchy Business</h2>
-              <h3 class="h4 regular" role="link">GraphQL </h3>
+                            <h2 class="h4 regular">Bcrypt, Stripe</h2>
+              <h3 class="h4 regular" role="link">GraphQL, Mongoose </h3>
               <a href="https://brianecommerce-4ffe41bea6fa.herokuapp.com/" target="_blank" aria-label="View"
                 class="gallery-landing-caption-link inline-block">View</a>
             </figcaption>
@@ -3442,7 +3452,9 @@ font-style: normal;
             <figcaption
               class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-content">
               <h2 class="h4 regular">PHÜDI</h2>
-              <h3 class="h4 regular" role="link">SQL</h3>
+                            <h2 class="h4 regular">Mailgen</h2>
+                                          <h2 class="h4 regular">Express Handlebars</h2>
+              <h3 class="h4 regular" role="link">Sequelize & SQL</h3>
               <a href="https://phudireservations.herokuapp.com/" target="_blank" aria-label="View"
                 class="gallery-landing-caption-link inline-block">View</a>
             </figcaption>

@@ -29,7 +29,8 @@ limitations under the License.
   <link rel="preload" fetchpriority="high" as="image" href="./img/gallery/hot10.webp" type="image/webp">
   <link rel="preload" fetchpriority="high" as="image" href="./img/gallery/energymap@2x.webp" type="image/webp">
   <link rel="preload" fetchpriority="high" as="image" href="./img/gallery/energymap.webp" type="image/webp">
-
+  <script async custom-element="amp-fx-collection"
+    src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
 
   <script async="" src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
@@ -104,11 +105,11 @@ limitations under the License.
 
   <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>
   <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async=""></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
   <style amp-custom>
     /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
 
@@ -1685,11 +1686,11 @@ limitations under the License.
     }
 
     body {
-  
+
       color: #ffffff;
       font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI,
         Roboto, sans-serif;
-          font-weight: 100;
+      font-weight: 100;
       line-height: 2.6;
     }
 
@@ -2117,7 +2118,8 @@ limitations under the License.
     .ampstart-sidebar-nav {
       margin-top: 32px;
     }
-.ampstart-nav-link:hover {
+
+    .ampstart-nav-link:hover {
       color: #4ab5b3;
     }
 
@@ -2133,15 +2135,15 @@ limitations under the License.
     .gallery-landing-title {
       font-weight: 100;
       line-height: 1.2;
-     position: absolute;
-  right: 0px;
-  left: 5vw;
-  padding: 10px;
+      position:relative;
+      right: 0px;
+      left: 5vw;
+      padding: 10px;
       top: 6vh;
-font-style: normal;
+      font-style: normal;
       font-size: 10vw;
       pointer-events: none;
- 
+
     }
 
     @media (min-width: 40.06rem) {
@@ -2348,10 +2350,9 @@ font-style: normal;
     }
 
     .gallery-landing-image-wrapped:hover amp-img {
-      transform: translateY(-1vh) scale(1.75);
       transition: transform 0.5s ease-in-out;
       border: double 5px transparent;
-      background-image: linear-gradient(white, rgb(0, 0, 0)), radial-gradient(circle at top left, rgb(255, 0, 0), #0c71cf);
+      background-image: linear-gradient(white, rgb(0, 0, 0)), radial-gradient(circle at top left, rgb(37, 172, 189), #140870);
       background-origin: border-box;
       background-clip: padding-box, border-box;
     }
@@ -2420,7 +2421,7 @@ font-style: normal;
 
     .gallery-landing-image-wrap:nth-child(6) {
       animation-delay: -0s;
-      
+
       top: 25em;
       left: 50em;
     }
@@ -2433,9 +2434,9 @@ font-style: normal;
 
     .gallery-landing-image-wrap:nth-child(7) {
       animation-delay: -4s;
-      
+
       top: 40em;
-            left: 10em;
+      left: 10em;
     }
 
     .gallery-landing-image-wrap:nth-child(7) .gallery-landing-image-transform {
@@ -2446,32 +2447,32 @@ font-style: normal;
 
     .gallery-landing-image-wrap:nth-child(8) {
       animation-delay: -1s;
-      
+
       top: 40em;
       left: 30em;
     }
 
     .gallery-landing-image-wrap:nth-child(8) .gallery-landing-image-transform {
-       width: 12em;
+      width: 12em;
       height: 12em;
 
     }
 
     .gallery-landing-image-wrap:nth-child(9) {
       animation-delay: -2s;
-      
+
       top: 40em;
       left: 50em;
     }
 
     .gallery-landing-image-wrap:nth-child(9) .gallery-landing-image-transform {
-       width: 12em;
+      width: 12em;
       height: 12em;
     }
 
     .gallery-landing-image-wrap:nth-child(10) {
       animation-delay: -7s;
-      
+
       top: 63vh;
       left: 90em;
     }
@@ -2484,7 +2485,7 @@ font-style: normal;
 
     .gallery-landing-image-wrap:nth-child(11) {
       animation-delay: -6s;
-      
+
       top: 63vh;
       left: 110em;
     }
@@ -2497,7 +2498,7 @@ font-style: normal;
 
     .gallery-landing-image-wrap:nth-child(12) {
       animation-delay: -9s;
-      
+
       top: 63vh;
       left: 235vh;
     }
@@ -2510,7 +2511,7 @@ font-style: normal;
 
     .gallery-landing-image-wrap:nth-child(13) {
       animation-delay: -8s;
-      
+
       top: 25em;
       left: 278vh;
     }
@@ -2523,7 +2524,7 @@ font-style: normal;
 
     .gallery-landing-image-wrap:nth-child(14) {
       animation-delay: -10s;
-      
+
       top: 25em;
       left: 192vh;
     }
@@ -2536,7 +2537,7 @@ font-style: normal;
 
     .gallery-landing-image-wrap:nth-child(15) {
       animation-delay: -9s;
-      
+
       top: 25em;
       left: 235vh;
     }
@@ -2549,7 +2550,7 @@ font-style: normal;
 
     .gallery-landing-image-wrap:nth-child(16) {
       animation-delay: -11s;
-      
+
       top: 25em;
       left: 259vh;
     }
@@ -2562,7 +2563,7 @@ font-style: normal;
 
     .gallery-landing-image-wrap:nth-child(17) {
       animation-delay: -10s;
-      
+
       bottom: 12vh;
       left: 214vh;
     }
@@ -2575,7 +2576,7 @@ font-style: normal;
 
     .gallery-landing-image-wrap:last-child {
       animation-delay: -12s;
-      
+
       top: 40em;
       left: 50em;
     }
@@ -2704,7 +2705,7 @@ font-style: normal;
     }
 
     .gallery-landing-image-wrapped:nth-child(8n-1) .gallery-landing-image-caption-content {
-      background: #000000;
+      background: #434343;
     }
 
     .gallery-landing-image-wrapped:nth-child(8n-1) .gallery-landing-image-caption:after {
@@ -2712,7 +2713,7 @@ font-style: normal;
     }
 
     .gallery-landing-image-wrapped:nth-child(8n-2) .gallery-landing-image-caption-content {
-      background: #000000;
+      background: #434343;
     }
 
     .gallery-landing-image-wrapped:nth-child(8n-2) .gallery-landing-image-caption:after {
@@ -2720,7 +2721,7 @@ font-style: normal;
     }
 
     .gallery-landing-image-wrapped:nth-child(8n-3) .gallery-landing-image-caption-content {
-      background: #000000;
+      background: #434343;
     }
 
     .gallery-landing-image-wrapped:nth-child(8n-3) .gallery-landing-image-caption:after {
@@ -2728,7 +2729,7 @@ font-style: normal;
     }
 
     .gallery-landing-image-wrapped:nth-child(8n-4) .gallery-landing-image-caption-content {
-      background: #000000;
+      background: #434343;
     }
 
     .gallery-landing-image-wrapped:nth-child(8n-4) .gallery-landing-image-caption:after {
@@ -2736,7 +2737,7 @@ font-style: normal;
     }
 
     .gallery-landing-image-wrapped:nth-child(8n-5) .gallery-landing-image-caption-content {
-      background: #000000;
+      background: #434343;
     }
 
     .gallery-landing-image-wrapped:nth-child(8n-5) .gallery-landing-image-caption:after {
@@ -2744,7 +2745,7 @@ font-style: normal;
     }
 
     .gallery-landing-image-wrapped:nth-child(8n-6) .gallery-landing-image-caption-content {
-      background: #000000;
+      background: #434343;
     }
 
     .gallery-landing-image-wrapped:nth-child(8n-6) .gallery-landing-image-caption:after {
@@ -2752,7 +2753,7 @@ font-style: normal;
     }
 
     .gallery-landing-image-wrapped:nth-child(8n-7) .gallery-landing-image-caption-content {
-      background: #000000;
+      background: #434343;
     }
 
     .gallery-landing-image-wrapped:nth-child(8n-7) .gallery-landing-image-caption:after {
@@ -2760,7 +2761,7 @@ font-style: normal;
     }
 
     .gallery-landing-image-wrapped:nth-child(8n) .gallery-landing-image-caption-content {
-      background: #000000;
+      background: #434343;
     }
 
     .gallery-landing-image-wrapped:nth-child(8n) .gallery-landing-image-caption:after {
@@ -2799,7 +2800,6 @@ font-style: normal;
 
     .ampstart-sidebar-header {
       font-weight: 300;
-      margin: 2rem 0 calc(1.25rem * 0.925);
     }
 
     .ampstart-navbar-trigger {
@@ -2807,24 +2807,25 @@ font-style: normal;
       flex: none;
       cursor: pointer;
 
+
     }
 
     .ampstart-headerbar .ampstart-navbar-trigger {
       isolation: isolate;
       padding: 0;
-      color:#ffffff;
+      color: #ffffff;
       margin-top: 20px;
-      mix-blend-mode:difference;
+      mix-blend-mode: difference;
       backdrop-filter: blur(10px);
-      background-color: transparent;
 
 
-      
+
     }
 
-.moreinfo{
-  mix-blend-mode: difference;
-}
+    .moreinfo {
+      mix-blend-mode: difference;
+      background-color: black;
+    }
 
     .gallery-sidebar .ampstart-navbar-trigger {
       height: 2.35rem;
@@ -2848,7 +2849,6 @@ font-style: normal;
     .gallery-sidebar .ampstart-navbar-trigger:active,
     .gallery-sidebar .ampstart-navbar-trigger:focus {
       outline: none;
-      background-color: #ccc;
     }
 
     .gallery-sidebar-close-button svg {
@@ -2871,7 +2871,7 @@ font-style: normal;
       font-size: 1rem;
       line-height: 2.25rem;
       letter-spacing: 0.05em;
-        color: rgb(255, 255, 255);
+      color: rgb(255, 255, 255);
 
     }
 
@@ -3029,9 +3029,11 @@ font-style: normal;
       -ms-flex: none;
       flex: none;
     }
- .ampstart-nav-item:nth-child(2) .gallery-sidebar-nav-item-text:hover{
+
+    .ampstart-nav-item:nth-child(2) .gallery-sidebar-nav-item-text:hover {
       color: #4ab5b3;
- }
+    }
+
     .ampstart-nav-item:nth-child(2) .ampstart-nav-link:before,
     .ampstart-nav-item:nth-child(2) .gallery-sidebar-nav-item-icon,
     .ampstart-nav-item:nth-child(2) .gallery-sidebar-nav-item-text {
@@ -3055,7 +3057,7 @@ font-style: normal;
       -ms-flex: auto;
       flex: auto;
       margin-right: 1rem;
-        color: rgb(255, 255, 255);
+      color: rgb(255, 255, 255);
       font-size: 1rem;
     }
 
@@ -3066,8 +3068,9 @@ font-style: normal;
     }
 
     .gallery-sidebar-nav-item-text:hover {
-      color:#4ab5b3;
+      color: #4ab5b3;
     }
+
     @media (min-width: 40.06rem) and (min-height: 40.06rem) {
 
       .ampstart-nav-item .ampstart-nav-link:before,
@@ -3180,20 +3183,16 @@ font-style: normal;
   </amp-analytics>
 
   <!-- Start Navbar -->
-  <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
-    
-    <div role="button" aria-label="open sidebar" on="tap:sidebar.toggle" tabindex="0"
-      class="ampstart-navbar-trigger pr2">
-          
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36">
-        <path fill="currentColor" d="M9 12h18v1H9z"></path>
-        <path fill="currentColor" d="M9 17h18v1H9z"></path>
-        <path fill="currentColor" d="M9 22h18v1H9z"></path>
- 
-      </svg>
+  <header class="ampstart-headerbar flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
 
+    <div role="button" aria-label="open sidebar" on="tap:sidebar.toggle" tabindex="0">
+            
+      <div>
+ 
+
+More Info</div>
     </div>
-            <div class="moreinfo">more info</div> 
+ 
   </header>
 
   <!-- Start Sidebar -->
@@ -3291,188 +3290,195 @@ font-style: normal;
   <!-- End Navbar -->
 
 
-    
-    <main id="content" class="gallery-base-content fit" role="main">
-          <h1
-            class="gallery-landing-title flex justify-center text-align-center absolute z1 mx-auto gallery-base-invert">
-            Brian Ebel Portfolio
-          </h1>
 
-      <amp-carousel width="100vw" height="200vh" controls="" class="gallery-landing-wall block relative">
+  <main id="content" class="gallery-base-content fit" role="main">
+    <h1 amp-fx="parallax"  data-duration="2000ms" data-parallax-factor="1.5"
+      class="gallery-landing-title flex justify-center text-align-center absolute z1 mx-auto gallery-base-invert">
+      Brian Ebel Portfolio
+    </h1>
 
-        <div class="gallery-landing-wall-scroll relative">
-          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
-            <a href="https://bcebel.github.io/Hot10/" target="_blank" class="gallery-landing-image-link"
-              aria-label="View"></a>
-            <figcaption
-              class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-extraleft gallery-landing-image-caption-content">
-              <h2 class="h4 regular">Hot 10!</h2>
-                            <h2 class="h4 regular">JavaScript</h2>
-              <h3 class="h4 regular" role="link">Youtube API</h3>
-              <a href="https://bcebel.github.io/Hot10/" target="_blank"
-                class="gallery-landing-caption-link inline-block">View</a>
-            </figcaption>
-            <div class="gallery-landing-image-transform">
-              <amp-img width="12" height="12" layout="responsive" src="./img/gallery/hot10.webp" srcset="
-          ./img/gallery/hot10.webp 1x,
-          ./img/gallery/hot10@2x.webp 2x
-        " alt="vinyl records and a record player"></amp-img>
-            </div>
-          </figure>
+    <amp-carousel width="100vw" height="200vh" controls="" class="gallery-landing-wall block relative" >
 
-          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
-            <a href="https://bcebel.github.io/met/" target="_blank" class="gallery-landing-image-link"
-              aria-label="View"></a>
-            <figcaption
-              class="gallery-landing-image-caption gallery-landing-image-caption-left gallery-landing-image-caption-bottom gallery-landing-image-caption-content">
+      <div class="gallery-landing-wall-scroll relative">
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+          <a href="https://phudireservations.herokuapp.com/" target="_blank" aria-label="View"
+            class="gallery-landing-image-link"></a>
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-extraleft gallery-landing-image-caption-content">
+            <h2 class="h4 regular">PHÜDI</h2>
+            <h2 class="h4 regular">Mailgen</h2>
+            <h2 class="h4 regular">Express Handlebars</h2>
+            <h3 class="h4 regular" role="link">Sequelize & SQL</h3>
+            <a href="https://phudireservations.herokuapp.com/" target="_blank" aria-label="View"
+              class="gallery-landing-caption-link inline-block">View</a>
+          </figcaption>
+          <div class="gallery-landing-image-transform" amp-fx="fade-in" data-duration="2000ms">
+            <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/phudi.webp" srcset="
+                                      ./img/gallery/phudi.webp 1x,
+                                      ./img/gallery/phudi@2x.webp 2x
+                                    " alt="food with clock and calendar"></amp-img>
+          </div>
+        </figure>
+
+
+
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+          <a href="https://bcebel.github.io/breakingbiochar/" target="_blank" aria-label="View"
+            class="gallery-landing-image-link"></a>
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-extraleft gallery-landing-image-caption-content">
+            <h2 class="h4 regular">lo-co2</h2>
+            <h3 class="h4 regular" role="link">IBM Carbon Design System</h3>
+            <a href="https://bcebel.github.io/breakingbiochar/" target="_blank" aria-label="View"
+              class="gallery-landing-caption-link inline-block">View</a>
+          </figcaption>
+          <div class="gallery-landing-image-transform" amp-fx="fade-in" data-duration="2000ms">
+            <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/loco2.webp
+                  " srcset="
+                          ./img/gallery/loco2.webp 1x,
+                          ./img/gallery/loco2@2x.webp 2x
+                        " alt="Brian Ebel"></amp-img>
+          </div>
+        </figure>
+
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-extraleft gallery-landing-image-caption-content">
+            <a href="https://bcebel.github.io/met/" target="_blank">
               <h2 class="h4 regular">Weather App</h2>
-                            <h2 class="h4 regular">Vanilla Javascript</h2>
-                            <h2 class="h4 regular">Dom Manipulation</h2>
+              <h2 class="h4 regular">Vanilla Javascript</h2>
+              <h2 class="h4 regular">Dom Manipulation</h2>
               <h3 class="h4 regular" role="link">OpenWeather API</h3>
-              <a href="https://bcebel.github.io/met/" target="_blank" aria-label="View"
-                class="gallery-landing-caption-link inline-block">View</a>
-            </figcaption>
-            <div class="gallery-landing-image-transform">
+            </a>
+          </figcaption>
+          <div class="gallery-landing-image-transform" amp-fx="fade-in" data-duration="2000ms">
+            <a href="https://bcebel.github.io/met/" target="_blank" class="gallery-landing-image-link"
+              aria-label="View">
+
               <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/forecast.webp" srcset="
           ./img/gallery/forecast.webp 1x,
           ./img/gallery/forecast@2x.webp 2x
         " alt="clouds"></amp-img>
-            </div>
-          </figure>
-          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+            </a>
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+          <a href="https://brianecommerce-4ffe41bea6fa.herokuapp.com/" target="_blank" aria-label="View"
+            class="gallery-landing-image-link"></a>
+          <figcaption class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-extraleft gallery-landing-image-caption-content">
+            <h2 class="h4 regular">Sketchy Business</h2>
+            <h2 class="h4 regular">Bcrypt, Stripe</h2>
+            <h3 class="h4 regular" role="link">GraphQL, Mongoose </h3>
             <a href="https://brianecommerce-4ffe41bea6fa.herokuapp.com/" target="_blank" aria-label="View"
-              class="gallery-landing-image-link"></a>
-            <figcaption class="gallery-landing-image-caption gallery-landing-image-caption-content">
-              <h2 class="h4 regular">Sketchy Business</h2>
-                            <h2 class="h4 regular">Bcrypt, Stripe</h2>
-              <h3 class="h4 regular" role="link">GraphQL, Mongoose </h3>
-              <a href="https://brianecommerce-4ffe41bea6fa.herokuapp.com/" target="_blank" aria-label="View"
-                class="gallery-landing-caption-link inline-block">View</a>
-            </figcaption>
-            <div class="gallery-landing-image-transform">
-              <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/sketchy.webp" srcset="
+              class="gallery-landing-caption-link inline-block">View</a>
+          </figcaption>
+          <div class="gallery-landing-image-transform" amp-fx="fade-in" data-duration="2000ms">
+            <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/sketchy.webp" srcset="
           ./img/gallery/sketchy.webp 1x,
           ./img/gallery/sketchy@2x.webp 2x
         " alt="artist painting the Eiffel Tower"></amp-img>
-            </div>
-          </figure>
-          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
-            <a href="https://bcebel.github.io/biochar/" target="_blank" class="gallery-landing-image-link"
-              aria-label="View"></a>
-            <figcaption
-              class="gallery-landing-image-caption gallery-landing-image-caption-bottom gallery-landing-image-caption-left gallery-landing-image-caption-content">
-              <h2 class="h4 regular">Biochar &nbsp &nbsp </h2>
-              <h3 class="h4 regular" role="link">React</h3>
-              <a href="https://bcebel.github.io/biochar/" target="_blank" aria-label="View"
-                class="gallery-landing-caption-link inline-block">View</a>
-            </figcaption>
-            <div class="gallery-landing-image-transform">
-              <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/fire.webp" srcset="
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+          <a href="https://nextjs-blog-beige-phi-95.vercel.app/" target="_blank" aria-label="View"
+            class="gallery-landing-image-link"></a>
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-extraleft gallery-landing-image-caption-content">
+            <h2 class="h4 regular">Portfolio</h2>
+            <h3 class="h4 regular" role="link">Next JS</h3>
+            <a href="https://nextjs-blog-beige-phi-95.vercel.app/" target="_blank" aria-label="View"
+              class="gallery-landing-caption-link inline-block">View</a>
+          </figcaption>
+          <div class="gallery-landing-image-transform" amp-fx="fade-in" data-duration="2000ms">
+            <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/brian.webp" srcset="
+                  ./img/gallery/brian.webp 1x,
+                  ./img/gallery/brian@2x.webp 2x
+                " alt="Brian Ebel"></amp-img>
+          </div>
+        </figure>
+
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+          <a href="https://bcebel.github.io/biochar/" target="_blank" class="gallery-landing-image-link"
+            aria-label="View"></a>
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-extraleft gallery-landing-image-caption-content">
+            <h2 class="h4 regular">Biochar &nbsp &nbsp </h2>
+            <h3 class="h4 regular" role="link">React</h3>
+            <a href="https://bcebel.github.io/biochar/" target="_blank" aria-label="View"
+              class="gallery-landing-caption-link inline-block">View</a>
+          </figcaption>
+          <div class="gallery-landing-image-transform" amp-fx="fade-in" data-duration="2000ms">
+            <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/fire.webp" srcset="
           ./img/gallery/fire.webp 1x,
           ./img/gallery/fire@2x.webp 2x
         " alt="artist rendering of biochar with blue flame"></amp-img>
-            </div>
-          </figure>
-          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+          <a href="https://bcebel.github.io/BrianPortfolio/" target="_blank" aria-label="View"
+            class="gallery-landing-image-link"></a>
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-extraleft gallery-landing-image-caption-content">
+            <h2 class="h4 regular">Portfolio</h2>
+            <h3 class="h4 regular" role="link">CSS</h3>
             <a href="https://bcebel.github.io/BrianPortfolio/" target="_blank" aria-label="View"
-              class="gallery-landing-image-link"></a>
-            <figcaption
-              class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-content">
-              <h2 class="h4 regular">Portfolio</h2>
-              <h3 class="h4 regular" role="link">CSS</h3>
-              <a href="https://bcebel.github.io/BrianPortfolio/" target="_blank" aria-label="View"
-                class="gallery-landing-caption-link inline-block">View</a>
-            </figcaption>
-            <div class="gallery-landing-image-transform">
-              <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/mountain.webp" srcset="
+              class="gallery-landing-caption-link inline-block">View</a>
+          </figcaption>
+          <div class="gallery-landing-image-transform" amp-fx="fade-in" data-duration="2000ms">
+            <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/mountain.webp" srcset="
           ./img/gallery/mountain.webp 1x,
           ./img/gallery/mountain@2x.webp 2x
         " alt="pencil sketch of mountaintops with snow"></amp-img>
-            </div>
-          </figure>
-          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
-            <a href="https://brython-e2a8d95106d7.herokuapp.com/" target="_blank" aria-label="View"
-              class="gallery-landing-image-link"></a>
-            <figcaption class="gallery-landing-image-caption gallery-landing-image-caption-content
-                      gallery-landing-image-caption-top">
-              <h2 class="h4 regular">Just Tech News</h2>
-              <h2 class="h4 regular">Python</h2>
+          </div>
+        </figure>
 
-
-              <a href="https://brython-e2a8d95106d7.herokuapp.com/" target="_blank" aria-label="View"
-                class="gallery-landing-caption-link inline-block">View</a>
-                
-            </figcaption>
-            <div class="gallery-landing-image-transform">
-              <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/pythonblog.webp"
-                srcset="
-                  ./img/gallery/pythonblog.webp 1x,
-                  ./img/gallery/pythonblog@2x.webp 2x
-                " alt="black & white python"></amp-img>
-            </div>
-          </figure>
-          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
-            <a href="https://bcebel.github.io/energymap/" target="_blank" class="gallery-landing-image-link"
-              aria-label="View"></a>
-            <figcaption
-              class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-extraleft gallery-landing-image-caption-content">
-              <h2 class="h4 regular">Energy Map</h2>
-              <h3 class="h4 regular" role="link">ArcGIS</h3>
-              <a href="https://bcebel.github.io/energymap/" target="_blank" aria-label="View"
-                class="gallery-landing-caption-link inline-block">View</a>
-            </figcaption>
-            <div class="gallery-landing-image-transform">
-              <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/energymap.webp"
-                srcset="
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+          <a href="https://bcebel.github.io/energymap/" target="_blank" class="gallery-landing-image-link"
+            aria-label="View"></a>
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-extraleft gallery-landing-image-caption-content">
+            <h2 class="h4 regular">Energy Map</h2>
+            <h3 class="h4 regular" role="link">ArcGIS</h3>
+            <a href="https://bcebel.github.io/energymap/" target="_blank" aria-label="View"
+              class="gallery-landing-caption-link inline-block">View</a>
+          </figcaption>
+          <div class="gallery-landing-image-transform" amp-fx="fade-in" data-duration="2000ms">
+            <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/energymap.webp" srcset="
           ./img/gallery/energymap.webp 1x,
           ./img/gallery/energymap@2x.webp 2x
         " alt="map of energy production around the world"></amp-img>
-            </div>
-          </figure>
-          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
-            <a href="https://nextjs-blog-beige-phi-95.vercel.app/" target="_blank" aria-label="View"
-              class="gallery-landing-image-link"></a>
-            <figcaption
-              class="gallery-landing-image-caption gallery-landing-image-caption-left gallery-landing-image-caption-bottom gallery-landing-image-caption-content">
-              <h2 class="h4 regular">Portfolio</h2>
-              <h3 class="h4 regular" role="link">Next JS</h3>
-              <a href="https://nextjs-blog-beige-phi-95.vercel.app/" target="_blank" aria-label="View"
-                class="gallery-landing-caption-link inline-block">View</a>
-            </figcaption>
-            <div class="gallery-landing-image-transform">
-              <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/brian.webp" srcset="
-          ./img/gallery/brian.webp 1x,
-          ./img/gallery/brian@2x.webp 2x
-        " alt="Brian Ebel"></amp-img>
-            </div>
-          </figure>
-          <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
-            <a href="https://phudireservations.herokuapp.com/" target="_blank" aria-label="View"
-              class="gallery-landing-image-link"></a>
-            <figcaption
-              class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-content">
-              <h2 class="h4 regular">PHÜDI</h2>
-                            <h2 class="h4 regular">Mailgen</h2>
-                                          <h2 class="h4 regular">Express Handlebars</h2>
-              <h3 class="h4 regular" role="link">Sequelize & SQL</h3>
-              <a href="https://phudireservations.herokuapp.com/" target="_blank" aria-label="View"
-                class="gallery-landing-caption-link inline-block">View</a>
-            </figcaption>
-            <div class="gallery-landing-image-transform">
-              <amp-img width="12" height="12" layout="responsive" noloading="" src="./img/gallery/phudi.webp" srcset="
-                              ./img/gallery/phudi.webp 1x,
-                              ./img/gallery/phudi@2x.webp 2x
-                            " alt="food with clock and calendar"></amp-img>
-            </div>
-          </figure>
+          </div>
+        </figure>
+
+
+                <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
+                
+                  <figcaption
+                    class="gallery-landing-image-caption gallery-landing-image-caption-top gallery-landing-image-caption-extraleft gallery-landing-image-caption-content">
+                    <a href="https://bcebel.github.io/Hot10/" target="_blank">
+                      <h2 class="h4 regular">Hot 10!</h2>
+                      <h2 class="h4 regular">JavaScript</h2>
+                      <h3 class="h4 regular" role="link">Youtube API</h3>
+                    </a>
+                  </figcaption>
+                  <div class="gallery-landing-image-transform" amp-fx="fade-in" data-duration="2000ms">
+                    <a href="https://bcebel.github.io/Hot10/" target="_blank" class="gallery-landing-image-link" aria-label="View">
+                      <amp-img width="12" height="12" layout="responsive" src="./img/gallery/hot10.webp" srcset="
+                          ./img/gallery/hot10.webp 1x,
+                          ./img/gallery/hot10@2x.webp 2x
+                        " alt="vinyl records and a record player"></amp-img>
+                    </a>
+                  </div>
+                </figure>
 
 
 
 
-        </div>
-      </amp-carousel>
+      </div>
+    </amp-carousel>
 
-    </main>
+  </main>
 </body>
 
 </html>

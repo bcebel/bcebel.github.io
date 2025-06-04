@@ -150,6 +150,81 @@
     amp-analytics {
       visibility: hidden;
     }
+    /* Bio Section Styles */
+.bio-section {
+  padding: 4rem 2rem;
+  background: #0a0a0a;
+  margin-top: 2rem;
+}
+
+.bio-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.bio-image {
+  flex: 1 1 200px;
+  min-width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(63, 74, 230, 0.2);
+}
+
+.bio-img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}
+
+.bio-content {
+  flex: 2 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bio-content h2 {
+  font-size: 2rem;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.skills h3 {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: var(--color-accent);
+}
+
+.tech-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.tech-list li {
+  margin-bottom: 0.3rem;
+}
+
+.resume-link {
+  align-self: flex-start;
+  display: inline-block;
+  background: transparent;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.resume-link:hover {
+  background: var(--color-accent);
+  color: #fff;
+}
   </style>
 
   <!-- AMP Boilerplate -->
@@ -261,7 +336,38 @@
   <!-- Main Content -->
   <main>
     <h1 class="portfolio-title">Brian Ebel Portfolio</h1>
-
+    <section class="bio-section">
+      <div class="bio-container">
+        <div class="bio-image">
+          <amp-img src="./img/gallery/brian.jpeg" width="200" height="200" layout="responsive"
+            alt="Brian Ebel Portrait" class="bio-img"></amp-img>
+        </div>
+        <div class="bio-content">
+          <h2>About Me</h2>
+          <p>I'm a full-stack web developer passionate about creating interactive, accessible, and performance-driven web
+            experiences. With a background in environmental science, I bring a unique perspective to tech challenges and
+            love building solutions that make a real-world impact.</p>
+    
+          <div class="skills">
+  
+            <ul class="tech-list">
+              <li><a href="https://www.credly.com/badges/97c73703-016f-4174-b771-526e1b7b90c5"> Microsoft Innovation Challenge Hackathon 2024></a> </li>
+               <li>JavaScript React Node.js</li>
+               <li>Expo Remix Next.js</li>
+              <li>Express SQL MongoDB</li>
+              <li>HTML5 CSS3 Web Accessibility</li>
+              <li>ArcGIS API Integrations</li>
+              <li>Google Cloud, AMP & Analytics</li>
+            </ul>
+          </div>
+    
+          <a href="https://docs.google.com/document/d/e/2PACX-1vTLzQhSeA_GKWep1Fi8HRbehKnhDxhH8bXggLdPd41trOx6fdlPlkgtpKmh6PJRXWqdyhjBDUpNUDD2/pub"
+            class="resume-link" target="_blank">
+            View Full Resume →
+          </a>
+        </div>
+      </div>
+      </section>
     <section class="portfolio-grid">
       <article class="project-card">
         <amp-img class="project-image" src="./img/gallery/phudi.jpg" width="16" height="9" layout="responsive"
@@ -335,10 +441,6 @@
           <a class="project-link" href=" https://github.com/bcebel/breakingbiochar" target="_blank">GitHub</a>
         </div>
       </article>
-
-
-
-      <!-- Add more project cards similarly -->
     </section>
   </main>
 

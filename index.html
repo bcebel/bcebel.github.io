@@ -6,7 +6,7 @@
   <title>Brian Ebel Portfolio</title>
   <link rel="canonical" href="https://bcebel.github.io/" />
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
-  <meta name="description" content="Brian Ebel Web Developer Portfolio" />
+  <meta name="description" content="Brian Ebel Web Developer Portfolio. Austin Texas, ATX, Programmer, AI, Web Design, Full Stack, Front End, Backend" />
 
   <!-- AMP Boilerplate -->
   <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -302,7 +302,7 @@
     </noscript>
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/WebPage">
 
   <!-- Analytics -->
   <amp-analytics type="gtag" data-credentials="include">
@@ -340,15 +340,15 @@
 
   <!-- Main Content -->
   <main>
-    <section class="bio-section">
+    <section class="bio-section" itemscope itemtype="http://schema.org/Person">
       <div class="bio-container">
         <div class="bio-image">
           <amp-img src="./img/gallery/brian.webp" width="200" height="200" layout="responsive"
-            alt="Brian Ebel Portrait" class="bio-img"></amp-img>
+            alt="Brian Ebel Portrait" class="bio-img" itemprop="image"></amp-img>
         </div>
         <div class="bio-content">
-          <h2>Brian Ebel</h2>
-          <p>Hi!  I'm a full-stack web developer passionate about creating interactive, accessible, and performance-driven web
+          <h2 itemprop="name">Brian Ebel</h2>
+          <p itemprop="description">Hi!  I'm a full-stack web developer passionate about creating interactive, accessible, and performance-driven web
             experiences. With a background in environmental science, I bring a unique perspective to tech challenges and
             love building solutions that make a real-world impact.</p>
     
@@ -372,78 +372,78 @@
         </div>
       </div>
       </section>
-      <h1 class="portfolio-title">Portfolio</h1>
-    <section class="portfolio-grid">
-      <article class="project-card">
+      <h1 class="portfolio-title" itemprop="headline">Portfolio</h1>
+    <section class="portfolio-grid" itemscope itemtype="http://schema.org/CollectionPage">
+      <article class="project-card" itemscope itemtype="http://schema.org/CreativeWork">
         <amp-img class="project-image" src="./img/gallery/phudi.webp" width="16" height="9" layout="responsive"
           alt="foodie Project"></amp-img>
         <div class="project-info">
-          <h2>food-e</h2>
-          <p>Restaurant Reservation App</p>
+          <h2 itemprop="name">food-e 🍔</h2>
+          <p itemprop="description">Restaurant Reservation App</p>
           <p>Express SQL Mailgen Heroku</p>
   
-          <a class="project-link" href="https://phudireservations.herokuapp.com/" target="_blank">View</a>
+          <a class="project-link" href="https://phudireservations.herokuapp.com/" target="_blank" itemprop="url">View</a>
           
-          <a class="project-link" href="https://github.com/ChrisJCota/phudi" target="_blank">GitHub</a>
+          <a class="project-link" href="https://github.com/ChrisJCota/phudi" target="_blank" itemprop="url">GitHub</a>
  
         </div>
       </article>
-      <article class="project-card">
+      <article class="project-card" itemscope itemtype="http://schema.org/CreativeWork">
         <amp-img class="project-image" src="./img/gallery/hot10.webp" width="16" height="9" layout="responsive"
           alt="Hot 10 Music Search"></amp-img>
         <div class="project-info">
-          <h2>Hot 10 Music Search</h2>
-          <p>Top YouTube Results and Album Covers</p>
+          <h2 itemprop="name">Hot 10 Music Search 🎶</h2>
+          <p itemprop="description">Top YouTube Results and Album Covers</p>
           <p>Last.fm & YouTube api</p>
-          <a class="project-link" href="https://bcebel.github.io/Hot10" target="_blank">View</a>
-          <a class="project-link" href=" https://github.com/bcebel/Hot10" target="_blank">GitHub</a>
+          <a class="project-link" href="https://bcebel.github.io/Hot10" target="_blank" itemprop="url">View</a>
+          <a class="project-link" href=" https://github.com/bcebel/Hot10" target="_blank" itemprop="url">GitHub</a>
          
         </div>
       </article>
 
 
-      <article class="project-card">
+      <article class="project-card" itemscope itemtype="http://schema.org/CreativeWork">
         <amp-img class="project-image" src="./img/gallery/sketchy.webp" width="16" height="9" layout="responsive"
           alt="Art E-commerce"></amp-img>
         <div class="project-info">
-          <h2>Art E-Commerce</h2>
-          <p>Full Stack Art Shopping Platform</p>
+          <h2 itemprop="name">Art E-Commerce 🎨</h2>
+          <p itemprop="description">Full Stack Art Shopping Platform</p>
           <p>React Bcrypt Stripe MongoDB GraphQL</p>
-          <a class="project-link" href="https://brianecommerce-4ffe41bea6fa.herokuapp.com/" target="_blank">View</a>
-          <a class="project-link" href="https://github.com/bcebel/E-commerceBackEnd" target="_blank">GitHub</a>
+          <a class="project-link" href="https://brianecommerce-4ffe41bea6fa.herokuapp.com/" target="_blank" itemprop="url">View</a>
+          <a class="project-link" href="https://github.com/bcebel/E-commerceBackEnd" target="_blank" itemprop="url">GitHub</a>
         </div>
       </article>
-      <article class="project-card">
+      <article class="project-card" itemscope itemtype="http://schema.org/CreativeWork">
         <amp-img class="project-image" src="./img/gallery/forecast.webp" width="16" height="9" layout="responsive"
           alt="Weather App"></amp-img>
         <div class="project-info">
-          <h2>Weather App</h2><p>Find Your Local Weather</p>
+          <h2 itemprop="name">Weather App 🌦️</h2><p itemprop="description">Find Your Local Weather</p>
           <p>OpenWeather API</p>
-          <a class="project-link" href="https://bcebel.github.io/met/" target="_blank">View</a>
-          <a class="project-link" href=" https://github.com/bcebel/met" target="_blank">GitHub</a>
+          <a class="project-link" href="https://bcebel.github.io/met/" target="_blank" itemprop="url">View</a>
+          <a class="project-link" href=" https://github.com/bcebel/met" target="_blank" itemprop="url">GitHub</a>
         </div>
       </article>
 
-      <article class="project-card">
+      <article class="project-card" itemscope itemtype="http://schema.org/CreativeWork">
         <amp-img class="project-image" src="./img/gallery/energymap.webp" width="16" height="9" layout="responsive"
           alt="Energy Map"></amp-img>
         <div class="project-info">
-          <h2>Energy Map</h2>
-          <p>Energy Production Across the Globe</p>
+          <h2 itemprop="name">Energy Map ⚡️</h2>
+          <p itemprop="description">Energy Production Across the Globe</p>
           <p>ArcGIS</p>
-          <a class="project-link" href="https://bcebel.github.io/energymap/" target="_blank">View</a>
-          <a class="project-link" href=" https://github.com/bcebel/energymap" target="_blank">GitHub</a>
+          <a class="project-link" href="https://bcebel.github.io/energymap/" target="_blank" itemprop="url">View</a>
+          <a class="project-link" href=" https://github.com/bcebel/energymap" target="_blank" itemprop="url">GitHub</a>
         </div>
       </article>
-      <article class="project-card">
+      <article class="project-card" itemscope itemtype="http://schema.org/CreativeWork">
         <amp-img class="project-image" src="./img/gallery/loco2.webp" width="16" height="9" layout="responsive"
           alt="lo-co2 Project"></amp-img>
         <div class="project-info">
-          <h2>lo-co2</h2>
-          <p>Pitch Concept for Carbon Sequestration</p>
+          <h2 itemprop="name">lo-co2 🌱</h2>
+          <p itemprop="description">Pitch Concept for Carbon Sequestration</p>
           <p>IBM Carbon Design System</p>
-          <a class="project-link" href="https://bcebel.github.io/breakingbiochar/" target="_blank">View</a>
-          <a class="project-link" href=" https://github.com/bcebel/breakingbiochar" target="_blank">GitHub</a>
+          <a class="project-link" href="https://bcebel.github.io/breakingbiochar/" target="_blank" itemprop="url">View</a>
+          <a class="project-link" href=" https://github.com/bcebel/breakingbiochar" target="_blank" itemprop="url">GitHub</a>
         </div>
       </article>
     </section>
